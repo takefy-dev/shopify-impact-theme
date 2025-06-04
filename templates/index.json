@@ -552,105 +552,23 @@
         "heading_gradient": ""
       }
     },
-    "featured_product_Wqjbfn": {
-      "type": "featured-product",
-      "blocks": {
-        "vendor_ifdwdN": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "title_nwEpNd": {
-          "type": "title",
-          "settings": {
-            "heading_tag": "h2"
-          }
-        },
-        "badges_dF8gmF": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price_MxJ7RQ": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
-        "rating_8mxHrR": {
-          "type": "rating",
-          "settings": {
-            "show_empty": false
-          }
-        },
-        "separator_Nx3qNF": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description_b3nCAj": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false
-          }
-        },
-        "variant_picker_zihiMt": {
-          "type": "variant_picker",
-          "settings": {
-            "hide_sold_out_variants": false,
-            "stack_blocks": true,
-            "selector_mode": "block",
-            "color_mode": "color",
-            "size_chart_page": ""
-          }
-        },
-        "quantity_selector_AyrGfM": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons_HX3ecY": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_payment_button": true,
-            "show_gift_card_recipient": true,
-            "atc_button_background": "",
-            "atc_button_text_color": "",
-            "payment_button_background": "",
-            "payment_button_text_color": ""
-          }
-        },
-        "pickup_availability_TtWmXM": {
-          "type": "pickup_availability",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "vendor_ifdwdN",
-        "title_nwEpNd",
-        "badges_dF8gmF",
-        "price_MxJ7RQ",
-        "rating_8mxHrR",
-        "separator_Nx3qNF",
-        "description_b3nCAj",
-        "variant_picker_zihiMt",
-        "quantity_selector_AyrGfM",
-        "buy_buttons_HX3ecY",
-        "pickup_availability_TtWmXM"
-      ],
-      "name": "Featured product",
+    "impact_text_Qarpb7": {
+      "type": "impact-text",
+      "name": "Impact text",
       "settings": {
         "full_width": true,
-        "product": "menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
-        "desktop_media_width": 55,
-        "desktop_media_layout": "carousel_thumbnails_left",
-        "mobile_media_size": "expanded",
-        "mobile_carousel_control": "floating_dots",
-        "enable_video_autoplay": true,
-        "enable_video_looping": false,
-        "enable_image_zoom": true,
-        "max_image_zoom_level": 3,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
         "background": "",
         "background_gradient": "",
+        "heading_text_color": "",
+        "heading_gradient": "",
         "text_color": "",
-        "input_background": "rgba(0,0,0,0)",
-        "input_text_color": ""
+        "button_background": "",
+        "button_text_color": ""
       }
     }
   },
@@ -667,6 +585,6 @@
     "impact_text_DFLAjG",
     "faq",
     "blog_posts_e8VnV9",
-    "featured_product_Wqjbfn"
+    "impact_text_Qarpb7"
   ]
 }
