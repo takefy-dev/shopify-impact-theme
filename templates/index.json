@@ -114,7 +114,7 @@
         "richtext_dNWRqi": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": ""
           }
         },
         "richtext_dpqmw9": {
@@ -130,8 +130,8 @@
             "size": "sm",
             "text": "Découvrir la ceinture",
             "url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
-            "background": "#000000",
-            "text_color": "#ffffff"
+            "background": "#ffffff",
+            "text_color": "#ef92e7"
           }
         }
       },
@@ -146,13 +146,13 @@
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/2925c11d0ff7fcf038b6e7f8594bf0b7.jpg",
+        "image_size": "sm",
+        "image": "shopify://shop_images/telechargement_2.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
       }
     },
     "multi_column_63zijf": {
