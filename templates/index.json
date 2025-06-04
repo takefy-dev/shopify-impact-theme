@@ -49,6 +49,42 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "image_link_blocks_nNNLBz": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_ghNkq7": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/ceinture_sororia_2_1.webp",
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_ghNkq7"
+      ],
+      "name": "Image link blocks",
+      "settings": {
+        "full_width": false,
+        "block_size": "small",
+        "subheading": "",
+        "title": "Soulage tes douleurs avec douceur",
+        "content": "<p>Conçue pour t’accompagner toute la journée, cette ceinture chauffante te procure un soulagement apaisant tout en restant discrète et élégante. Parce que ton confort ne devrait jamais attendre.</p>",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "image-link-blocks": {
       "type": "image-link-blocks",
       "blocks": {
@@ -685,6 +721,7 @@
   },
   "order": [
     "slideshow",
+    "image_link_blocks_nNNLBz",
     "image-link-blocks",
     "collection-list",
     "featured-collection",
