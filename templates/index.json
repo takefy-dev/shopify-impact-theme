@@ -471,22 +471,22 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "title": "Combien de temps faut-il pour que la ceinture chauffe ?",
+            "content": "<p>Environ 30 secondes. Tu peux choisir entre 3 niveaux de chaleur selon ton besoin.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "title": "Est-elle discrète à porter sous les vêtements ?",
+            "content": "<p>Oui, la ceinture est fine, douce et souple. Elle peut se glisser facilement sous un pull, un t-shirt ou un sweat.</p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "title": "Et si je ne suis pas satisfaite ?",
+            "content": "<p>Tu bénéficies d’une garantie <strong>satisfait ou remboursé pendant 14 jours</strong> après réception du produit. Tu peux nous contacter 7j/7.</p>"
           }
         }
       },
@@ -499,10 +499,10 @@
         "full_width": false,
         "subheading": "",
         "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
+        "content": "<p>Questions fréquentes</p>",
         "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "support_hours": "📩 Notre service client est disponible 7j/7 par e-mail.",
+        "answer_time": "Temps de réponse moyen : sous 24h.",
         "button_text": "",
         "button_url": "",
         "text_position": "start",
