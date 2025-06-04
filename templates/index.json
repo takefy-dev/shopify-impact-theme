@@ -152,7 +152,7 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_opacity": 5
       }
     },
     "multi_column_63zijf": {
@@ -570,6 +570,60 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "image_with_text_overlay_N84LTL": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_6N6TQJ": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6N6TQJ"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/2925c11d0ff7fcf038b6e7f8594bf0b7.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 8
+      }
+    },
+    "image_with_text_overlay_PgdmPB": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_KfiPba": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_KfiPba"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/Pink_Minimalist_Skincare_Brand_Comparison_Chart_Table_Graph_1.png",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 6
+      }
     }
   },
   "order": [
@@ -585,6 +639,8 @@
     "impact_text_DFLAjG",
     "faq",
     "blog_posts_e8VnV9",
-    "impact_text_Qarpb7"
+    "impact_text_Qarpb7",
+    "image_with_text_overlay_N84LTL",
+    "image_with_text_overlay_PgdmPB"
   ]
 }
