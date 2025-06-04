@@ -49,6 +49,141 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
+    "image-link-blocks": {
+      "type": "image-link-blocks",
+      "blocks": {
+        "item_9R3Wfk": {
+          "type": "item",
+          "settings": {
+            "stretch_image": true,
+            "link_text": "",
+            "link_url": "",
+            "background": "",
+            "text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "item_9R3Wfk"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "block_size": "medium",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_collections": false,
+        "collections_per_row": 3,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Collection list",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "image_with_text_overlay_3UTKGE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_XgTmeX": {
+          "type": "heading",
+          "settings": {
+            "text": "Soulage tes douleurs avec douceur",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_dNWRqi": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "richtext_dpqmw9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Conçue pour t’accompagner tout au long de la journée, cette ceinture chauffante te procure un moment d’apaisement tout en restant discrète et élégante. Parce que ton confort ne devrait jamais attendre.</p>"
+          }
+        },
+        "button_AEknTb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "sm",
+            "text": "Découvrir la ceinture",
+            "url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "background": "#000000",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XgTmeX",
+        "richtext_dNWRqi",
+        "richtext_dpqmw9",
+        "button_AEknTb"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/2925c11d0ff7fcf038b6e7f8594bf0b7.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
     "multi_column_63zijf": {
       "type": "multi-column",
       "blocks": {
@@ -106,198 +241,6 @@
         "background": "",
         "background_gradient": "",
         "text_color": ""
-      }
-    },
-    "image-link-blocks": {
-      "type": "image-link-blocks",
-      "blocks": {
-        "item_9R3Wfk": {
-          "type": "item",
-          "settings": {
-            "stretch_image": true,
-            "link_text": "",
-            "link_url": "",
-            "background": "",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item_9R3Wfk"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": false,
-        "block_size": "medium",
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "collection-list": {
-      "type": "collection-list",
-      "blocks": {
-        "collection_DN48Ly": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "url": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        }
-      },
-      "block_order": [
-        "collection_DN48Ly",
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "full_width": true,
-        "stack_collections": false,
-        "collections_per_row": 3,
-        "show_progress_bar": false,
-        "subheading": "",
-        "title": "Collection list",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
-    "featured-collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "collection": "",
-        "products": [],
-        "full_width": true,
-        "stack_products": false,
-        "show_progress_bar": false,
-        "products_count": 6,
-        "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
-        "subheading": "",
-        "title": "Featured collection",
-        "content": "",
-        "link_url": "",
-        "link_text": "View all",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "product_card_background": "",
-        "product_card_text_color": ""
-      }
-    },
-    "image_with_text_overlay_3UTKGE": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_XgTmeX": {
-          "type": "heading",
-          "settings": {
-            "text": "Soulage tes douleurs avec douceur",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_dpqmw9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Conçue pour t’accompagner tout au long de la journée, cette ceinture chauffante te procure un moment d’apaisement tout en restant discrète et élégante. Parce que ton confort ne devrait jamais attendre.</p>"
-          }
-        },
-        "button_AEknTb": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "sm",
-            "text": "Découvrir la ceinture",
-            "url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
-            "background": "#000000",
-            "text_color": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XgTmeX",
-        "richtext_dpqmw9",
-        "button_AEknTb"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/2925c11d0ff7fcf038b6e7f8594bf0b7.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
       }
     },
     "1749041382c0470b00": {
@@ -627,7 +570,7 @@
         "show_comments_count": false,
         "show_category": true,
         "subheading": "",
-        "title": "Articles",
+        "title": "Conseils bien-être",
         "content": "",
         "link_url": "",
         "link_text": "",
@@ -637,21 +580,123 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "featured_product_Wqjbfn": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_ifdwdN": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_nwEpNd": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h2"
+          }
+        },
+        "badges_dF8gmF": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_MxJ7RQ": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "rating_8mxHrR": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator_Nx3qNF": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_b3nCAj": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_zihiMt": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_AyrGfM": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_HX3ecY": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": true,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "pickup_availability_TtWmXM": {
+          "type": "pickup_availability",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_ifdwdN",
+        "title_nwEpNd",
+        "badges_dF8gmF",
+        "price_MxJ7RQ",
+        "rating_8mxHrR",
+        "separator_Nx3qNF",
+        "description_b3nCAj",
+        "variant_picker_zihiMt",
+        "quantity_selector_AyrGfM",
+        "buy_buttons_HX3ecY",
+        "pickup_availability_TtWmXM"
+      ],
+      "name": "Featured product",
+      "settings": {
+        "full_width": true,
+        "product": "menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
     }
   },
   "order": [
     "slideshow",
-    "multi_column_63zijf",
     "image-link-blocks",
     "collection-list",
     "featured-collection",
     "image_with_text_overlay_3UTKGE",
+    "multi_column_63zijf",
     "1749041382c0470b00",
     "media-grid",
     "video_Dh8V9N",
     "testimonials_VcUnE8",
     "impact_text_DFLAjG",
     "faq",
-    "blog_posts_e8VnV9"
+    "blog_posts_e8VnV9",
+    "featured_product_Wqjbfn"
   ]
 }
