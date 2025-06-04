@@ -101,33 +101,6 @@
         "heading_gradient": ""
       }
     },
-    "image_with_text_overlay_PgdmPB": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_KfiPba": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_KfiPba"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Pink_Minimalist_Skincare_Brand_Comparison_Chart_Table_Graph_1.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 6
-      }
-    },
     "image_with_text_overlay_3UTKGE": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -179,7 +152,7 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 5
+        "overlay_opacity": 6
       }
     },
     "multi_column_63zijf": {
@@ -364,24 +337,32 @@
         "background_gradient": ""
       }
     },
+    "scrolling_text_ybyVAw": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Comment l’utiliser ? Regardez ça 👇",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
+    },
     "video_Dh8V9N": {
       "type": "video",
       "blocks": {
         "play_xJULJK": {
           "type": "play",
           "settings": {}
-        },
-        "heading_LVaBVa": {
-          "type": "heading",
-          "settings": {
-            "text": "Video",
-            "heading_tag": "h1"
-          }
         }
       },
       "block_order": [
-        "play_xJULJK",
-        "heading_LVaBVa"
+        "play_xJULJK"
       ],
       "name": "Video",
       "settings": {
@@ -630,11 +611,11 @@
     "slideshow",
     "image_link_blocks_nNNLBz",
     "images_with_text_scrolling_Ahnmik",
-    "image_with_text_overlay_PgdmPB",
     "image_with_text_overlay_3UTKGE",
     "multi_column_63zijf",
     "1749041382c0470b00",
     "media-grid",
+    "scrolling_text_ybyVAw",
     "video_Dh8V9N",
     "testimonials_VcUnE8",
     "impact_text_DFLAjG",
