@@ -287,39 +287,47 @@
         "overlay_opacity": 30
       }
     },
-    "impact-text": {
-      "type": "impact-text",
+    "1749041382c0470b00": {
+      "type": "apps",
       "blocks": {
-        "1664424181b38582d5-0": {
-          "type": "item",
+        "judge_me_reviews_review_widget_homepage_8CWyGk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "title": "100%",
-            "subheading": "Avis",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
+            "product": "menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device"
           }
         }
       },
       "block_order": [
-        "1664424181b38582d5-0"
+        "judge_me_reviews_review_widget_homepage_8CWyGk"
       ],
       "settings": {
         "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "#f0f0f0",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "1749037961dd91faef": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
         "background": "",
         "background_gradient": "",
-        "heading_text_color": "",
-        "heading_gradient": "linear-gradient(180deg, rgba(26, 26, 26, 0.2), rgba(26, 26, 26, 0) 100%)",
         "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
       }
     },
     "media-grid": {
@@ -423,28 +431,6 @@
         "mobile_row_height": 150,
         "background": "",
         "background_gradient": ""
-      }
-    },
-    "before-after-image": {
-      "type": "before-after-image",
-      "settings": {
-        "full_width": true,
-        "subheading": "",
-        "title": "Before/after",
-        "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
-        "expand_image": false,
-        "text_position": "center",
-        "before_after_text_position": "bottom",
-        "before_text": "Before",
-        "after_text": "After",
-        "drag_initial_position": 50,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "before_text_color": "#ffffff",
-        "after_text_color": "#ffffff",
-        "drag_cursor_background": "#ffffff",
-        "drag_cursor_color": "#000000"
       }
     },
     "impact_text_DFLAjG": {
@@ -578,9 +564,9 @@
     "collection-list",
     "featured-collection",
     "image_with_text_overlay_3UTKGE",
-    "impact-text",
+    "1749041382c0470b00",
+    "1749037961dd91faef",
     "media-grid",
-    "before-after-image",
     "impact_text_DFLAjG",
     "faq",
     "blog_posts_e8VnV9"
