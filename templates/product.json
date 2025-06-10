@@ -137,40 +137,40 @@
         "item_ACeJze": {
           "type": "item",
           "settings": {
-            "icon": "picto-coupon",
+            "icon": "picto-love",
             "mobile_icon_width": 24,
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Free shipping",
-            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+            "icon_background": "#ffffff",
+            "icon_color": "#ef92e7",
+            "title": "Bien-être immédiat",
+            "content": "<p>Un moment pour soi à chaque cycle</p>"
           }
         },
         "item_HN9EFY": {
           "type": "item",
           "settings": {
-            "icon": "picto-coupon",
+            "icon": "picto-happy",
             "mobile_icon_width": 24,
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Customer service",
-            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+            "icon_background": "#ffffff",
+            "icon_color": "#ef92e7",
+            "title": "Douce & discrète",
+            "content": "<p>Se glisse sous les vêtements, à la maison ou au travail</p>"
           }
         },
         "item_MbJYmQ": {
           "type": "item",
           "settings": {
-            "icon": "picto-coupon",
+            "icon": "picto-truck",
             "mobile_icon_width": 24,
             "icon_width": 32,
             "icon_background_type": "circle",
-            "icon_background": "",
-            "icon_color": "",
-            "title": "Secure payment",
-            "content": "<p>Your payment information is processed securely.</p>"
+            "icon_background": "#ffffff",
+            "icon_color": "#ef92e7",
+            "title": "Livraison suivie & garantie",
+            "content": "<p>Livraison en 7–15 jours + satisfait ou remboursé 14 jours</p>"
           }
         }
       },
