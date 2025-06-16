@@ -402,33 +402,6 @@
         "background_gradient": ""
       }
     },
-    "image_with_text_overlay_4WBWjV": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_rFyN3f": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_rFyN3f"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/Pink_Minimalist_Skincare_Brand_Comparison_Chart_Table_Graph_1.png",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#ffffff",
-        "overlay_opacity": 0
-      }
-    },
     "multiple_images_with_text_tW8G4X": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -740,6 +713,49 @@
         "overlay_color": "#000000",
         "overlay_opacity": 8
       }
+    },
+    "multiple_images_with_text_7qbCNc": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_qMHU9L": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Pink_Minimalist_Skincare_Brand_Comparison_Chart_Table_Graph_1.png",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "La différence entre Chaleur Douce et une bouillotte.",
+            "content": "<p>Pourquoi la ceinture chauffante Chaleur Douce est une solution efficace et pratique ?</p>",
+            "button_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "button_text": "Acheter maintenant"
+          }
+        },
+        "item_k7Q9tP": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_qMHU9L",
+        "item_k7Q9tP"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -750,7 +766,6 @@
     "multi_column_63zijf",
     "1749041382c0470b00",
     "media-grid",
-    "image_with_text_overlay_4WBWjV",
     "multiple_images_with_text_tW8G4X",
     "scrolling_text_ybyVAw",
     "video_Dh8V9N",
@@ -759,6 +774,7 @@
     "faq",
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
-    "image_with_text_overlay_N84LTL"
+    "image_with_text_overlay_N84LTL",
+    "multiple_images_with_text_7qbCNc"
   ]
 }
