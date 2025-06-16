@@ -75,7 +75,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "🚚 Livraison",
-            "content": "<p>Livraison rapide entre 7 et 15 jours ouvrés.Un numéro de suivi vous sera envoyé dès l’expédition.</p>"
+            "content": "<p>Livraison rapide entre 7 et 15 jours ouvrés.</p><p>Un numéro de suivi vous sera envoyé dès l’expédition.</p>"
           }
         },
         "collapsible_text_EatUdm": {
@@ -89,7 +89,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "💬 Service client",
-            "content": "<p>Notre équipe est disponible 7j/7 pour vous aider.</p><p>Temps de réponse moyen : quelques heures.</p>"
+            "content": "<p>Notre équipe est disponible 7j/7 pour vous aider.</p>"
           }
         },
         "variant_picker": {
