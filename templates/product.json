@@ -247,6 +247,66 @@
         "text_color": ""
       }
     },
+    "testimonials_DHpjiM": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_3HeFMd": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Léa R.",
+            "title": "",
+            "content": "<p><em>J'ai testé plein de trucs, mais rien n’a marché comme ça. Je l’utilise même au travail, elle est fine et ne se voit pas. C’est devenu mon indispensable tous les mois.</em></p>"
+          }
+        },
+        "testimonial_yVbkBE": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Chloé D.",
+            "title": "",
+            "content": "<p><em>Elle est top. J’avais peur que ça soit gadget mais pas du tout. C’est discret, ça chauffe vite, et je peux la garder même quand je sors. Merci pour cette invention 🙏</em></p>"
+          }
+        },
+        "testimonial_xnWggt": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Manon G.",
+            "title": "",
+            "content": "<p><em>Très confortable, douce, et simple à utiliser. La chaleur détend bien et j’adore pouvoir choisir le niveau. Livraison rapide aussi, je suis trop contente !</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_3HeFMd",
+        "testimonial_yVbkBE",
+        "testimonial_xnWggt"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Avis clients",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
     "multiple_images_with_text_bdyGKJ": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -308,74 +368,14 @@
         "button_background": "",
         "button_text_color": ""
       }
-    },
-    "testimonials_DHpjiM": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_3HeFMd": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Léa R.",
-            "title": "",
-            "content": "<p><em>J'ai testé plein de trucs, mais rien n’a marché comme ça. Je l’utilise même au travail, elle est fine et ne se voit pas. C’est devenu mon indispensable tous les mois.</em></p>"
-          }
-        },
-        "testimonial_yVbkBE": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Chloé D.",
-            "title": "",
-            "content": "<p><em>Elle est top. J’avais peur que ça soit gadget mais pas du tout. C’est discret, ça chauffe vite, et je peux la garder même quand je sors. Merci pour cette invention 🙏</em></p>"
-          }
-        },
-        "testimonial_xnWggt": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Manon G.",
-            "title": "",
-            "content": "<p><em>Très confortable, douce, et simple à utiliser. La chaleur détend bien et j’adore pouvoir choisir le niveau. Livraison rapide aussi, je suis trop contente !</em></p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_3HeFMd",
-        "testimonial_yVbkBE",
-        "testimonial_xnWggt"
-      ],
-      "name": "Testimonials",
-      "settings": {
-        "full_width": true,
-        "stack_testimonials": true,
-        "subheading": "",
-        "title": "Testimonials",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
-      }
     }
   },
   "order": [
     "main",
     "related-products",
     "text_with_icons_befRbk",
+    "testimonials_DHpjiM",
     "multiple_images_with_text_bdyGKJ",
-    "multiple_images_with_text_rtD4LC",
-    "testimonials_DHpjiM"
+    "multiple_images_with_text_rtD4LC"
   ]
 }
