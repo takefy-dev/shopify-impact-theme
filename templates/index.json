@@ -416,22 +416,10 @@
             "button_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
             "button_text": ""
           }
-        },
-        "item_JEzAR8": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
         }
       },
       "block_order": [
-        "item_E8h8ia",
-        "item_JEzAR8"
+        "item_E8h8ia"
       ],
       "name": "Multiple images with text",
       "settings": {
@@ -728,22 +716,10 @@
             "button_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
             "button_text": "Acheter maintenant"
           }
-        },
-        "item_k7Q9tP": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
         }
       },
       "block_order": [
-        "item_qMHU9L",
-        "item_k7Q9tP"
+        "item_qMHU9L"
       ],
       "name": "Multiple images with text",
       "settings": {
