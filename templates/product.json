@@ -277,12 +277,56 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "multiple_images_with_text_bdyGKJ": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_gt8qxC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6133.heic",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Quand les douleurs prennent trop de place",
+            "content": "<p>Crampes, tiraillements, tensions… cette ceinture est là pour vous aider à souffler un peu pendant vos règles.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_eHebXp": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_gt8qxC",
+        "item_eHebXp"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
     "main",
     "related-products",
     "text_with_icons_befRbk",
-    "multiple_images_with_text_rtD4LC"
+    "multiple_images_with_text_rtD4LC",
+    "multiple_images_with_text_bdyGKJ"
   ]
 }
