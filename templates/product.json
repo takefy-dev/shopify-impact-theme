@@ -64,6 +64,13 @@
             "collapse_content": false
           }
         },
+        "collapsible_text_kthjFj": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "💡 Caractéristiques",
+            "content": "<p>Vous pouvez contrôler votre ceinture menstruelle chauffante facilement avec l'écran LED.</p><p>Elle dispose de 3 modes de chauffage : 50°C/55°C/60°C ainsi que 4 modes de vibrations.</p><p>Elle est ajustable pour s'adapter à toutes les morphologies.</p>"
+          }
+        },
         "collapsible_text_XQQWe7": {
           "type": "collapsible_text",
           "settings": {
@@ -90,13 +97,6 @@
           "settings": {
             "title": "💬 Service client",
             "content": "<p>Notre équipe est disponible 7j/7 pour vous aider.</p>"
-          }
-        },
-        "collapsible_text_kthjFj": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "💡 Caractéristiques",
-            "content": "<p>Vous pouvez contrôler votre ceinture menstruelle chauffante facilement avec l'écran LED.</p><p>Elle dispose de 3 modes de chauffage : 50°C/55°C/60°C ainsi que 4 modes de vibrations.</p><p>Elle est ajustable pour s'adapter à toutes les morphologies.</p>"
           }
         },
         "variant_picker": {
@@ -137,11 +137,11 @@
         "payment_terms",
         "separator",
         "description",
+        "collapsible_text_kthjFj",
         "collapsible_text_XQQWe7",
         "collapsible_text_cgc7E6",
         "collapsible_text_EatUdm",
         "collapsible_text_EC9qzi",
-        "collapsible_text_kthjFj",
         "variant_picker",
         "quantity_selector",
         "buy_buttons"
