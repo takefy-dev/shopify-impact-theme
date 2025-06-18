@@ -612,58 +612,6 @@
         "button_text_color": ""
       }
     },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "166442457738b23caf-0": {
-          "type": "item",
-          "settings": {
-            "title": "Combien de temps faut-il pour que la ceinture chauffe ?",
-            "content": "<p>Environ 30 secondes. Tu peux choisir entre 3 niveaux de chaleur selon ton besoin.</p>"
-          }
-        },
-        "166442457738b23caf-1": {
-          "type": "item",
-          "settings": {
-            "title": "Est-elle discrète à porter sous les vêtements ?",
-            "content": "<p>Oui, la ceinture est fine, douce et souple. Elle peut se glisser facilement sous un pull, un t-shirt ou un sweat.</p>"
-          }
-        },
-        "166442457738b23caf-2": {
-          "type": "item",
-          "settings": {
-            "title": "Et si je ne suis pas satisfaite ?",
-            "content": "<p>Tu bénéficies d’une garantie <strong>satisfait ou remboursé pendant 14 jours</strong> après réception du produit. Tu peux nous contacter 7j/7.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2"
-      ],
-      "settings": {
-        "full_width": false,
-        "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Questions fréquentes</p>",
-        "team_avatar_width": 160,
-        "support_hours": "📩 Notre service client est disponible 7j/7 par e-mail.",
-        "answer_time": "Temps de réponse moyen : sous 24h.",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
-      }
-    },
     "blog_posts_e8VnV9": {
       "type": "blog-posts",
       "blocks": {
@@ -775,6 +723,58 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "166442457738b23caf-0": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps faut-il pour que la ceinture chauffe ?",
+            "content": "<p>Environ 30 secondes. Tu peux choisir entre 3 niveaux de chaleur selon ton besoin.</p>"
+          }
+        },
+        "166442457738b23caf-1": {
+          "type": "item",
+          "settings": {
+            "title": "Est-elle discrète à porter sous les vêtements ?",
+            "content": "<p>Oui, la ceinture est fine, douce et souple. Elle peut se glisser facilement sous un pull, un t-shirt ou un sweat.</p>"
+          }
+        },
+        "166442457738b23caf-2": {
+          "type": "item",
+          "settings": {
+            "title": "Et si je ne suis pas satisfaite ?",
+            "content": "<p>Tu bénéficies d’une garantie <strong>satisfait ou remboursé pendant 14 jours</strong> après réception du produit. Tu peux nous contacter 7j/7.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "166442457738b23caf-0",
+        "166442457738b23caf-1",
+        "166442457738b23caf-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "<p>Questions fréquentes</p>",
+        "team_avatar_width": 160,
+        "support_hours": "📩 Notre service client est disponible 7j/7 par e-mail.",
+        "answer_time": "Temps de réponse moyen : sous 24h.",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "start",
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -791,10 +791,10 @@
     "video_Dh8V9N",
     "testimonials_VcUnE8",
     "impact_text_DFLAjG",
-    "faq",
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
     "image_with_text_overlay_N84LTL",
-    "multiple_images_with_text_7qbCNc"
+    "multiple_images_with_text_7qbCNc",
+    "faq"
   ]
 }
