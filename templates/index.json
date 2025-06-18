@@ -234,22 +234,10 @@
             "button_url": "",
             "button_text": ""
           }
-        },
-        "item_dLMPc8": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "Heading 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
         }
       },
       "block_order": [
-        "item_4Yn93F",
-        "item_dLMPc8"
+        "item_4Yn93F"
       ],
       "name": "Multiple images with text",
       "settings": {
@@ -666,33 +654,6 @@
         "button_text_color": ""
       }
     },
-    "image_with_text_overlay_N84LTL": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_6N6TQJ": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_6N6TQJ"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "auto",
-        "image": "shopify://shop_images/2925c11d0ff7fcf038b6e7f8594bf0b7.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 8
-      }
-    },
     "multiple_images_with_text_7qbCNc": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -793,7 +754,6 @@
     "impact_text_DFLAjG",
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
-    "image_with_text_overlay_N84LTL",
     "multiple_images_with_text_7qbCNc",
     "faq"
   ]
