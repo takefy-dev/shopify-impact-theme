@@ -31,7 +31,7 @@
     "heading_font": "lora_n4",
     "heading_font_size": "medium",
     "heading_letter_spacing": -2,
-    "text_font": "arimo_n4",
+    "text_font": "nunito_n4",
     "show_page_transition": true,
     "heading_apparition": "split_fade",
     "product_color_display": "swatch",
