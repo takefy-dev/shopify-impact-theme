@@ -398,7 +398,7 @@
         "item-3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/71jx7mBUHNL._AC_SL1500.jpg",
+            "image": "shopify://shop_images/D1BD92FC-F01F-4270-B72E-B3D16E7C2FED.webp",
             "title": "",
             "heading_tag": "h4",
             "link_url": "",
@@ -407,7 +407,7 @@
             "desktop_column_span": 1,
             "desktop_row_span": 1,
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
+            "background": "#1a1a1a",
             "background_gradient": "",
             "text_color": "#ffffff",
             "text_gradient": "",
