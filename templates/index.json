@@ -180,7 +180,7 @@
             "text": "Découvrir la ceinture",
             "url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
             "background": "#ffffff",
-            "text_color": "#1a1a1a"
+            "text_color": "#f99ac5"
           }
         }
       },
@@ -305,9 +305,9 @@
         "subheading": "Un soulagement qui allie efficacité, douceur et discrétion.",
         "title": "Pourquoi choisir Chaleur Douce ?",
         "content": "",
-        "background": "#fec5df",
+        "background": "#f99ac5",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#ffffff"
       }
     },
     "1749041382c0470b00": {
@@ -596,8 +596,8 @@
         "heading_text_color": "",
         "heading_gradient": "",
         "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "button_background": "#f99ac5",
+        "button_text_color": "#ffffff"
       }
     },
     "blog_posts_e8VnV9": {
