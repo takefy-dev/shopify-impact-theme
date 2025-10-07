@@ -76,7 +76,7 @@
         "impact_text_style": "fill",
         "text_divider": "none",
         "impact_text_size_ratio": 1,
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
         "heading_text_color": "#f2f2f2",
         "heading_gradient": "",
