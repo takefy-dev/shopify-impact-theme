@@ -150,22 +150,6 @@
         "input_text_color": ""
       }
     },
-    "images_with_text_scrolling_Ahnmik": {
-      "type": "images-with-text-scrolling",
-      "name": "Images and text scrolling",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "show_counter": true,
-        "desktop_image_effect": "reveal",
-        "image_position": "end",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "image_with_text_overlay_3UTKGE": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -218,6 +202,22 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 6
+      }
+    },
+    "images_with_text_scrolling_Ahnmik": {
+      "type": "images-with-text-scrolling",
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": true,
+        "desktop_image_effect": "reveal",
+        "image_position": "end",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
       }
     },
     "multiple_images_with_text_tiP64n": {
@@ -305,7 +305,7 @@
         "subheading": "Un soulagement qui allie efficacité, douceur et discrétion.",
         "title": "Pourquoi choisir Chaleur Douce ?",
         "content": "",
-        "background": "",
+        "background": "#fec5df",
         "background_gradient": "",
         "text_color": ""
       }
@@ -624,11 +624,11 @@
         "show_comments_count": false,
         "show_category": true,
         "subheading": "",
-        "title": "Conseils bien-être",
+        "title": "Bien-être féminin : nos articles et astuces",
         "content": "",
         "link_url": "",
         "link_text": "",
-        "background": "",
+        "background": "#fec5df",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
@@ -741,8 +741,8 @@
   "order": [
     "slideshow",
     "featured_product_wFDimW",
-    "images_with_text_scrolling_Ahnmik",
     "image_with_text_overlay_3UTKGE",
+    "images_with_text_scrolling_Ahnmik",
     "multiple_images_with_text_tiP64n",
     "multi_column_63zijf",
     "1749041382c0470b00",
