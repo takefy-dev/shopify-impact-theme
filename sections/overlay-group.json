@@ -42,7 +42,7 @@
         "recommendations_title": "Trending this month",
         "products": [],
         "product_card_background": "#f2f2f2",
-        "product_card_text_color": ""
+        "product_card_text_color": "#fa95c2"
       }
     },
     "search-drawer": {
