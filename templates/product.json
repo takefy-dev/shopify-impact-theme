@@ -48,7 +48,12 @@
         },
         "judge_me_reviews_review_widget_8LcWgk": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget",
+            "max_width": 1200
+          }
         },
         "payment_terms": {
           "type": "payment_terms",
@@ -83,7 +88,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#ef92e7",
+            "atc_button_background": "#fa95c2",
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -250,17 +255,6 @@
     "testimonials_DHpjiM": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_3HeFMd": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Léa R.",
-            "title": "",
-            "content": "<p><em>J'ai testé plein de trucs, mais rien n’a marché comme ça. Je l’utilise même au travail, elle est fine et ne se voit pas. C’est devenu mon indispensable tous les mois.</em></p>"
-          }
-        },
         "testimonial_yVbkBE": {
           "type": "testimonial",
           "settings": {
@@ -270,6 +264,17 @@
             "author": "Chloé D.",
             "title": "",
             "content": "<p><em>Elle est top. J’avais peur que ça soit gadget mais pas du tout. C’est discret, ça chauffe vite, et je peux la garder même quand je sors. Merci pour cette invention 🙏</em></p>"
+          }
+        },
+        "testimonial_3HeFMd": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Léa R.",
+            "title": "",
+            "content": "<p><em>J'ai testé plein de trucs, mais rien n’a marché comme ça. Je l’utilise même au travail, elle est fine et ne se voit pas. C’est devenu mon indispensable tous les mois.</em></p>"
           }
         },
         "testimonial_xnWggt": {
@@ -285,8 +290,8 @@
         }
       },
       "block_order": [
-        "testimonial_3HeFMd",
         "testimonial_yVbkBE",
+        "testimonial_3HeFMd",
         "testimonial_xnWggt"
       ],
       "name": "Testimonials",
