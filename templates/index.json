@@ -300,37 +300,6 @@
         "heading_gradient": ""
       }
     },
-    "multiple_images_with_text_tiP64n": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_4Yn93F": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/71jx7mBUHNL._AC_SL1500.jpg",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Chaleur Thérapeutique",
-            "content": "<p>La ceinture diffuse une chaleur ciblée qui détend vos muscles, atténue les crampes et apaise les douleurs. Elle vous aide à rester sereine et libre de vos mouvements, tout au long de la journée.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_4Yn93F"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "multi_column_63zijf": {
       "type": "multi-column",
       "blocks": {
@@ -849,7 +818,6 @@
     "image_with_text_overlay_3UTKGE",
     "multiple_images_with_text_p9aebi",
     "images_with_text_scrolling_Ahnmik",
-    "multiple_images_with_text_tiP64n",
     "multi_column_63zijf",
     "1749041382c0470b00",
     "media-grid",
