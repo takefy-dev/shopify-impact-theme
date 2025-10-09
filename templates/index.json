@@ -796,6 +796,49 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "multiple_images_with_text_p9aebi": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_xUKF4Y": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/10_1080x_ffc62d42-0ee5-490e-bc03-d85dbe3cd541.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Le confort dont votre corps avait besoin.",
+            "content": "<p>Dites adieu aux douleurs menstruelles et aux gênes du quotidien.<br/>Notre bouillotte chauffante rechargeable vous offre une chaleur douce, où que vous soyez.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_8HjqY3": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "Heading 2",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_xUKF4Y",
+        "item_8HjqY3"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -817,6 +860,7 @@
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
-    "faq"
+    "faq",
+    "multiple_images_with_text_p9aebi"
   ]
 }
