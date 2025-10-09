@@ -169,6 +169,50 @@
         "input_text_color": ""
       }
     },
+    "multiple_images_with_text_acJcVQ": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_RBTJNr": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5830.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "⭐⭐⭐⭐⭐",
+            "title": "Camille R.",
+            "content": "<p>Avant, j’utilisais une bouillotte classique mais je devais rester allongée sinon elle glissait…<br/>Depuis que j’ai la ceinture<strong>Chaleur Douce</strong>, je peux bouger, travailler, faire mes courses, tout en soulageant mes douleurs.<br/>Elle tient parfaitement en place et chauffe super vite !!!</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_PpndVC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5831.webp",
+            "image_rotation_degrees": 1.5,
+            "subheading": "⭐⭐⭐⭐⭐",
+            "title": "Marie L.",
+            "content": "<p>Mon copain m’a offert cette bouillotte après m’avoir vue souffrir chaque mois… Franchement, le plus beau cadeau qu’il m’ait jamais fait 😭💗<br/>La chaleur est douce, apaisante, et je me sens enfin bien pendant mes règles. Je la recommande à toutes mes amies !</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_RBTJNr",
+        "item_PpndVC"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -373,59 +417,15 @@
         "button_background": "",
         "button_text_color": ""
       }
-    },
-    "multiple_images_with_text_acJcVQ": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_RBTJNr": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5830.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "⭐⭐⭐⭐⭐",
-            "title": "Camille R.",
-            "content": "<p>Avant, j’utilisais une bouillotte classique mais je devais rester allongée sinon elle glissait…<br/>Depuis que j’ai la ceinture<strong>Chaleur Douce</strong>, je peux bouger, travailler, faire mes courses, tout en soulageant mes douleurs.<br/>Elle tient parfaitement en place et chauffe super vite !!!</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "item_PpndVC": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5831.webp",
-            "image_rotation_degrees": 1.5,
-            "subheading": "⭐⭐⭐⭐⭐",
-            "title": "Marie L.",
-            "content": "<p>Mon copain m’a offert cette bouillotte après m’avoir vue souffrir chaque mois… Franchement, le plus beau cadeau qu’il m’ait jamais fait 😭💗<br/>La chaleur est douce, apaisante, et je me sens enfin bien pendant mes règles. Je la recommande à toutes mes amies !</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_RBTJNr",
-        "item_PpndVC"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
     "main",
+    "multiple_images_with_text_acJcVQ",
     "related-products",
     "text_with_icons_befRbk",
     "testimonials_DHpjiM",
     "multiple_images_with_text_bdyGKJ",
-    "multiple_images_with_text_rtD4LC",
-    "multiple_images_with_text_acJcVQ"
+    "multiple_images_with_text_rtD4LC"
   ]
 }
