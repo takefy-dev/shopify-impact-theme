@@ -186,6 +186,50 @@
         "input_text_color": ""
       }
     },
+    "multiple_images_with_text_rM3gUa": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_nxAyyN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5833.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "⭐⭐⭐⭐⭐",
+            "title": "Inès P.",
+            "content": "<p>J’adore le design rose poudré, super féminin et discret.<br/>Elle est toute fine, facile à recharger, et la chaleur est constante 😍</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_XLWDGU": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_5834.webp",
+            "image_rotation_degrees": 1.5,
+            "subheading": "⭐⭐⭐⭐⭐",
+            "title": "Nina T.",
+            "content": "<p>Franchement, je ne pensais pas qu’une bouillotte pouvait changer autant mon confort. Je l’utilise pendant mes règles, mais aussi quand j’ai mal au dos ou au ventre après le sport.<br/>Un vrai indispensable !</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_nxAyyN",
+        "item_XLWDGU"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "image_with_text_overlay_3UTKGE": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -690,50 +734,6 @@
         "button_text_color": ""
       }
     },
-    "multiple_images_with_text_rM3gUa": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_nxAyyN": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5833.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "⭐⭐⭐⭐⭐",
-            "title": "Inès P.",
-            "content": "<p>J’adore le design rose poudré, super féminin et discret.<br/>Elle est toute fine, facile à recharger, et la chaleur est constante 😍</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "item_XLWDGU": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5834.webp",
-            "image_rotation_degrees": 1.5,
-            "subheading": "⭐⭐⭐⭐⭐",
-            "title": "Nina T.",
-            "content": "<p>Franchement, je ne pensais pas qu’une bouillotte pouvait changer autant mon confort. Je l’utilise pendant mes règles, mais aussi quand j’ai mal au dos ou au ventre après le sport.<br/>Un vrai indispensable !</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_nxAyyN",
-        "item_XLWDGU"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "multiple_images_with_text_7qbCNc": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -822,6 +822,7 @@
     "slideshow",
     "impact_text_UW36ea",
     "featured_product_wFDimW",
+    "multiple_images_with_text_rM3gUa",
     "image_with_text_overlay_3UTKGE",
     "images_with_text_scrolling_Ahnmik",
     "multiple_images_with_text_tiP64n",
@@ -835,7 +836,6 @@
     "impact_text_DFLAjG",
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
-    "multiple_images_with_text_rM3gUa",
     "multiple_images_with_text_7qbCNc",
     "faq"
   ]
