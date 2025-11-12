@@ -167,6 +167,7 @@
         "buy_buttons_wiKRix",
         "pickup_availability_qiETmf"
       ],
+      "disabled": true,
       "name": "Featured product",
       "settings": {
         "full_width": true,
