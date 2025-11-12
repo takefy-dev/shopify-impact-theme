@@ -369,6 +369,7 @@
         "testimonial_3HeFMd",
         "testimonial_xnWggt"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "full_width": true,
