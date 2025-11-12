@@ -17,14 +17,14 @@
         "message": {
           "type": "message",
           "settings": {
-            "text": "- 10% sur votre première commande avec le code BIENVENUE10",
+            "text": "OFFRE BLACK FRIDAY : - 10% sur votre commande avec le code BF10",
             "url": ""
           }
         },
         "message_H8TipV": {
           "type": "message",
           "settings": {
-            "text": "LIVRAISON GRATUITE",
+            "text": "LIVRAISON GRATUITE EN FRANCE",
             "url": ""
           }
         }
@@ -36,8 +36,8 @@
       "settings": {
         "enable_sticky": false,
         "text_size": "text-base",
-        "navigation_mode": "scrolling",
-        "scrolling_speed": 15,
+        "navigation_mode": "arrows",
+        "scrolling_speed": 10,
         "background": "#ffffff",
         "background_gradient": "",
         "text_color": "#f99ac5"
