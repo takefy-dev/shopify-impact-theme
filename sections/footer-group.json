@@ -85,6 +85,59 @@
         "text_color": ""
       }
     },
+    "faq_DjGmai": {
+      "type": "faq",
+      "blocks": {
+        "item_EhjD4J": {
+          "type": "item",
+          "settings": {
+            "title": "Combien de temps faut-il pour que la ceinture chauffe ?",
+            "content": "<p>Environ 30 secondes. Tu peux choisir entre 3 niveaux de chaleur selon ton besoin.</p>"
+          }
+        },
+        "item_pp7fGF": {
+          "type": "item",
+          "settings": {
+            "title": "Est-elle discrète à porter sous les vêtements ?",
+            "content": "<p>Oui, la ceinture est fine, douce et souple. Elle peut se glisser facilement sous un pull, un t-shirt ou un sweat.</p>"
+          }
+        },
+        "item_9GXtN6": {
+          "type": "item",
+          "settings": {
+            "title": "Et si je ne suis pas satisfaite ?",
+            "content": "<p>Tu bénéficies d’une garantie <strong>satisfait ou remboursé pendant 14 jours</strong> après réception du produit. Tu peux nous contacter 7j/7.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_EhjD4J",
+        "item_pp7fGF",
+        "item_9GXtN6"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "FAQ",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "📩 Notre service client est disponible 7j/7 par e-mail.",
+        "answer_time": "Temps de réponse moyen : sous 24h.",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "17500804260e2a3c85": {
       "type": "apps",
       "settings": {
@@ -127,6 +180,7 @@
   },
   "order": [
     "text-with-icons",
+    "faq_DjGmai",
     "17500804260e2a3c85",
     "footer"
   ]
