@@ -38,19 +38,6 @@
             "show_empty": false
           }
         },
-        "judge_me_reviews_preview_badge_f4CJUW": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
-        "judge_me_reviews_review_widget_8LcWgk": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        },
         "payment_terms": {
           "type": "payment_terms",
           "settings": {}
@@ -124,6 +111,15 @@
             "title": "💬 Service client",
             "content": "<p>Notre équipe est disponible 7j/7 pour vous aider.</p>"
           }
+        },
+        "judge_me_reviews_review_widget_8LcWgk": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
@@ -132,8 +128,6 @@
         "badges",
         "price",
         "rating",
-        "judge_me_reviews_preview_badge_f4CJUW",
-        "judge_me_reviews_review_widget_8LcWgk",
         "payment_terms",
         "separator",
         "description",
@@ -144,7 +138,8 @@
         "collapsible_text_XQQWe7",
         "collapsible_text_cgc7E6",
         "collapsible_text_EatUdm",
-        "collapsible_text_EC9qzi"
+        "collapsible_text_EC9qzi",
+        "judge_me_reviews_review_widget_8LcWgk"
       ],
       "settings": {
         "full_width": true,
