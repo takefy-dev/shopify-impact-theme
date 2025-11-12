@@ -20,10 +20,18 @@
             "text": "- 10% sur votre première commande avec le code BIENVENUE10",
             "url": ""
           }
+        },
+        "message_H8TipV": {
+          "type": "message",
+          "settings": {
+            "text": "LIVRAISON GRATUITE",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_H8TipV"
       ],
       "settings": {
         "enable_sticky": false,

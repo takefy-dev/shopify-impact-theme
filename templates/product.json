@@ -12,10 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -50,9 +46,9 @@
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "review_data": "sample_data",
+            "max_width": 1200,
             "show_shop_reviews": false,
-            "empty_state": "empty_widget",
-            "max_width": 1200
+            "empty_state": "empty_widget"
           }
         },
         "payment_terms": {
@@ -112,7 +108,7 @@
           "type": "collapsible_text",
           "settings": {
             "title": "🚚 Livraison",
-            "content": "<p>Livraison rapide entre 7 et 15 jours ouvrés.</p><p>Un numéro de suivi vous sera envoyé dès l’expédition.</p>"
+            "content": "<p>Livraison gratuite et rapide entre 7 et 15 jours ouvrés.</p><p>Un numéro de suivi vous sera envoyé dès l’expédition.</p>"
           }
         },
         "collapsible_text_EatUdm": {
@@ -131,7 +127,6 @@
         }
       },
       "block_order": [
-        "vendor",
         "title",
         "judge_me_reviews_preview_badge_LBgXqD",
         "badges",
