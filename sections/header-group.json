@@ -20,18 +20,10 @@
             "text": "🎉 OFFRE BLACK FRIDAY : - 10% avec le code BF10 + Livraison gratuite 🚚",
             "url": ""
           }
-        },
-        "message_H8TipV": {
-          "type": "message",
-          "settings": {
-            "text": "LIVRAISON GRATUITE EN FRANCE",
-            "url": ""
-          }
         }
       },
       "block_order": [
-        "message",
-        "message_H8TipV"
+        "message"
       ],
       "settings": {
         "enable_sticky": false,
