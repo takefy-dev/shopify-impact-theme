@@ -67,10 +67,17 @@
           "type": "quantity_selector",
           "settings": {}
         },
-        "text_HBtCLi": {
-          "type": "text",
+        "offer_pJyhEt": {
+          "type": "offer",
           "settings": {
-            "text": "<p>🎁 Offre Black Friday : -10% avec le code BF10 </p>"
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-gift",
+            "icon_width": 24,
+            "title": " Offre Black Friday ",
+            "content": "<p>-10% avec le code BF10</p>",
+            "background": "#f2f2f2",
+            "text_color": "#1a1a1a"
           }
         },
         "buy_buttons": {
@@ -82,6 +89,19 @@
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
+          }
+        },
+        "offer_qjKNEf": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "none",
+            "icon_width": 24,
+            "title": " 🎁 Offre Black Friday",
+            "content": "<p> -10% avec le code BF10</p>",
+            "background": "#f2f2f2",
+            "text_color": "#1a1a1a"
           }
         },
         "collapsible_text_kthjFj": {
@@ -140,8 +160,9 @@
         "description",
         "variant_picker",
         "quantity_selector",
-        "text_HBtCLi",
+        "offer_pJyhEt",
         "buy_buttons",
+        "offer_qjKNEf",
         "collapsible_text_kthjFj",
         "collapsible_text_XQQWe7",
         "collapsible_text_cgc7E6",
