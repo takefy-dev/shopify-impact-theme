@@ -138,6 +138,36 @@
         "accordion_text_color": ""
       }
     },
+    "rich_text_AtVKHk": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_9qNJN4": {
+          "type": "subheading",
+          "settings": {
+            "text": "🌸 Prête à dire stop aux douleurs menstruelles ?"
+          }
+        },
+        "richtext_6tVQgL": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Soulagement rapide, chaleur douce, garantie satisfaite ou remboursée 15 jours.</p><p>👉  Rejoignez les clientes ChaleurDouce™ et retrouvez des cycles plus sereins.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_9qNJN4",
+        "richtext_6tVQgL"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "17500804260e2a3c85": {
       "type": "apps",
       "settings": {
@@ -176,12 +206,26 @@
         "show_country_name": true,
         "show_locale_selector": true
       }
+    },
+    "rich_text_V73akf": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
     "text-with-icons",
     "faq_DjGmai",
+    "rich_text_AtVKHk",
     "17500804260e2a3c85",
-    "footer"
+    "footer",
+    "rich_text_V73akf"
   ]
 }
