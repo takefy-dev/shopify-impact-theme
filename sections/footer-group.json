@@ -163,9 +163,9 @@
         "full_width": true,
         "content_width": "small",
         "text_position": "center",
-        "background": "",
+        "background": "#f2f2f2",
         "background_gradient": "",
-        "text_color": "#f99ac5"
+        "text_color": "#1a1a1a"
       }
     },
     "17500804260e2a3c85": {
