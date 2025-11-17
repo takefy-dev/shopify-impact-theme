@@ -67,6 +67,12 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "text_HBtCLi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>🎁 Offre Black Friday : -10% avec le code BF10 </p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -134,6 +140,7 @@
         "description",
         "variant_picker",
         "quantity_selector",
+        "text_HBtCLi",
         "buy_buttons",
         "collapsible_text_kthjFj",
         "collapsible_text_XQQWe7",
@@ -449,6 +456,18 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "rich_text_QUfbUt": {
+      "type": "rich-text",
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
@@ -459,6 +478,7 @@
     "text_with_icons_befRbk",
     "testimonials_DHpjiM",
     "multiple_images_with_text_bdyGKJ",
-    "multiple_images_with_text_rtD4LC"
+    "multiple_images_with_text_rtD4LC",
+    "rich_text_QUfbUt"
   ]
 }
