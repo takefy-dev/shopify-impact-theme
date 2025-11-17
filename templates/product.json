@@ -284,7 +284,7 @@
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "#ffffff",
-            "icon_color": "#ef92e7",
+            "icon_color": "#fa95c2",
             "title": "Bien-être immédiat",
             "content": "<p>Un moment pour soi à chaque cycle</p>"
           }
@@ -297,7 +297,7 @@
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "#ffffff",
-            "icon_color": "#ef92e7",
+            "icon_color": "#fa95c2",
             "title": "Douce & discrète",
             "content": "<p>Se glisse sous les vêtements, à la maison ou au travail</p>"
           }
@@ -310,7 +310,7 @@
             "icon_width": 32,
             "icon_background_type": "none",
             "icon_background": "#ffffff",
-            "icon_color": "#ef92e7",
+            "icon_color": "#fa95c2",
             "title": "Livraison suivie & garantie",
             "content": "<p>Livraison en 7–15 jours + satisfait ou remboursé 14 jours</p>"
           }
