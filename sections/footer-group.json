@@ -92,14 +92,14 @@
           "type": "item",
           "settings": {
             "title": "Combien de temps faut-il pour que la ceinture chauffe ?",
-            "content": "<p>Environ 30 secondes. Tu peux choisir entre 3 niveaux de chaleur selon ton besoin.</p>"
+            "content": "<p><strong>La ceinture chauffe en 5 à 10 secondes.</strong></p><p>Elle atteint rapidement la température que vous avez choisie grâce à son système de chauffe intelligent.</p><p><em>👉 Vous ressentez un soulagement dès les premières minutes.</em></p>"
           }
         },
         "item_pp7fGF": {
           "type": "item",
           "settings": {
             "title": "Est-elle discrète à porter sous les vêtements ?",
-            "content": "<p>Oui, la ceinture est fine, douce et souple. Elle peut se glisser facilement sous un pull, un t-shirt ou un sweat.</p>"
+            "content": "<p>Oui, totalement.</p><p>La ceinture est <strong>fine, légère et silencieuse</strong>, ce qui permet de la porter <strong>au travail, en cours ou en déplacement</strong> sans que personne ne le remarque.</p><p>👉 <em>Elle se glisse facilement sous vos vêtements.</em></p>"
           }
         },
         "item_9GXtN6": {
@@ -108,12 +108,36 @@
             "title": "Et si je ne suis pas satisfaite ?",
             "content": "<p>Tu bénéficies d’une garantie <strong>satisfait ou remboursé pendant 14 jours</strong> après réception du produit. Tu peux nous contacter 7j/7.</p>"
           }
+        },
+        "item_de7YjH": {
+          "type": "item",
+          "settings": {
+            "title": " Est-ce que la ceinture peut aussi soulager les douleurs de dos ou de ventre hors règles ?",
+            "content": "<p>Oui.</p><p>Elle peut être utilisée pour <strong>les douleurs musculaires</strong>, les crampes digestives, les tensions lombaires ou le bas du dos.</p><p>👉 <em>La chaleur ciblée relaxe les muscles et apaise les tensions.</em></p>"
+          }
+        },
+        "item_HQDHmp": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce qu’elle fonctionne sur batterie ? Faut-il la laisser branchée ?",
+            "content": "<p>La ceinture est <strong>entièrement rechargeable</strong> et fonctionne <strong>sans fil</strong>.</p><p>Vous pouvez l’utiliser en déplacement sans prise électrique.</p><p>👉 <em>Parfaite même en dehors de la maison.</em></p>"
+          }
+        },
+        "item_T3zNCh": {
+          "type": "item",
+          "settings": {
+            "title": "Est-ce qu’elle est sans danger ?",
+            "content": "<p>Oui, totalement.</p><p>La ceinture dispose d’un <strong>système de régulation de chaleur</strong> et d’une <strong>fonction arrêt automatique</strong> pour éviter la surchauffe.</p><p>👉 <em>Elle est conçue pour un usage quotidien, en toute sécurité.</em></p>"
+          }
         }
       },
       "block_order": [
         "item_EhjD4J",
         "item_pp7fGF",
-        "item_9GXtN6"
+        "item_9GXtN6",
+        "item_de7YjH",
+        "item_HQDHmp",
+        "item_T3zNCh"
       ],
       "name": "FAQ",
       "settings": {
