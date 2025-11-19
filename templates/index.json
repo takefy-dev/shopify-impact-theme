@@ -23,7 +23,7 @@
             "title": "Le confort dont ton corps a besoin",
             "heading_tag": "h2",
             "button_text": "Découvrir le produit",
-            "button_link": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "button_link": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
             "button_text_color": "#fa95c2",
@@ -171,7 +171,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+        "product": "ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
@@ -215,7 +215,7 @@
             "style": "fill",
             "size": "sm",
             "text": "Découvrir la ceinture",
-            "url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
             "background": "#ffffff",
             "text_color": "#f99ac5"
           }
@@ -494,7 +494,7 @@
             "subheading": "",
             "title": "Massage vibrant & chaleur réconfortante",
             "content": "<p>Découvrez une expérience de soulagement sur-mesure :</p><p>4 modes de massage par vibration associés à 3 niveaux de chaleur réglable pour apaiser en profondeur vos crampes menstruelles.</p><p>La chaleur se diffuse rapidement et en toute sécurité, procurant un confort immédiat là où vous en avez besoin.</p>",
-            "button_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "button_url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
             "button_text": ""
           }
         }
@@ -564,7 +564,7 @@
             "subheading": " Prête à soulager tes douleurs ?",
             "content": "<p>Chaleur Douce t’accompagne chaque mois avec bienveillance et efficacité.</p>",
             "button_text": "Commander maintenant",
-            "button_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "button_url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
             "animate_impact_text": false,
             "animate_impact_text_duration": 2
           }
@@ -739,7 +739,7 @@
             "subheading": "",
             "title": "La différence entre Chaleur Douce et une bouillotte.",
             "content": "<p>Pourquoi la ceinture chauffante Chaleur Douce est une solution efficace et pratique ?</p>",
-            "button_url": "shopify://products/menstrual-heating-pad-smart-warm-belt-relief-waist-pain-cramps-vibrating-abdominal-massager-electric-waist-belt-device",
+            "button_url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
             "button_text": "Acheter maintenant"
           }
         }
