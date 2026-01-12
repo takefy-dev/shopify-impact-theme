@@ -537,6 +537,50 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "multiple_images_with_text_wDtqJm": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_3EKifk": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1548.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "🎀",
+            "content": "<p>Les douleurs menstruelles prennent le dessus, le ventre se contracte et chaque mouvement devient inconfortable</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "item_jw9ewR": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_1547.webp",
+            "image_rotation_degrees": 1.5,
+            "subheading": "",
+            "title": "🎀",
+            "content": "<p>Grâce à la bouillotte chauffante <strong>Chaleur Douce</strong>, la chaleur enveloppe le ventre et aide à apaiser les tensions</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_3EKifk",
+        "item_jw9ewR"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -549,6 +593,7 @@
     "multiple_images_with_text_bdyGKJ",
     "multiple_images_with_text_rtD4LC",
     "multiple_images_with_text_pQq7iN",
-    "rich_text_QUfbUt"
+    "rich_text_QUfbUt",
+    "multiple_images_with_text_wDtqJm"
   ]
 }
