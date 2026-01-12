@@ -427,7 +427,7 @@
         "item_gt8qxC": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/27_1080x_8a387eb1-9a46-44ac-a685-4137508e533f.webp",
+            "image": "shopify://shop_images/IMG_8947_2.heic",
             "image_rotation_degrees": -2,
             "subheading": "",
             "title": "À emporter partout avec vous",
@@ -439,80 +439,6 @@
       },
       "block_order": [
         "item_gt8qxC"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "multiple_images_with_text_rtD4LC": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_dEDmJH": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/61BpIZwhBAL.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Profitez d'un réglage de température personnalisé pour un confort optimal",
-            "content": "<p>Grâce à ses <strong>trois niveaux de température ajustables</strong>, la ceinture ChaleurDouce™ vous permet d’adapter la chaleur à l’intensité de vos douleurs.</p><p>Choisissez la chaleur idéale pour <strong>apaiser vos crampes</strong> et retrouver instantanément votre confort, en toute sécurité.</p><p>Fonction arrêt automatique pour éviter toute surchauffe.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_dEDmJH"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
-    "multiple_images_with_text_pQq7iN": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_DUKxWh": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "item_nkWJeT": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_1549.webp",
-            "image_rotation_degrees": 1.5,
-            "subheading": "",
-            "title": "",
-            "content": "",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_DUKxWh",
-        "item_nkWJeT"
       ],
       "name": "Multiple images with text",
       "settings": {
@@ -591,8 +517,6 @@
     "text_with_icons_befRbk",
     "testimonials_DHpjiM",
     "multiple_images_with_text_bdyGKJ",
-    "multiple_images_with_text_rtD4LC",
-    "multiple_images_with_text_pQq7iN",
     "rich_text_QUfbUt",
     "multiple_images_with_text_wDtqJm"
   ]
