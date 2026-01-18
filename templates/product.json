@@ -74,8 +74,8 @@
             "icon_position": "aligned",
             "icon": "none",
             "icon_width": 24,
-            "title": " 🎁 Offre de bienvenue",
-            "content": "<p> -10% sur votre première commande —<strong> </strong>Code : WELCOME10</p>",
+            "title": " 💌 Offre de Saint-Valentin",
+            "content": "<p> -10% sur votre première commande —<strong> </strong>Code : LOVE10</p>",
             "background": "#f2f2f2",
             "text_color": "#1a1a1a"
           }
