@@ -262,7 +262,7 @@
           "settings": {
             "image": "shopify://shop_images/5_dfc17cb5-3450-4659-8c7a-1827f1ec9cfb.webp",
             "image_rotation_degrees": 0,
-            "subheading": ".",
+            "subheading": "",
             "title": "",
             "content": "",
             "button_url": "",
