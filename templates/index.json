@@ -248,11 +248,11 @@
         "item_xUKF4Y": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/10_1080x_ffc62d42-0ee5-490e-bc03-d85dbe3cd541.webp",
+            "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
             "image_rotation_degrees": -2,
             "subheading": "",
-            "title": "Le confort dont votre corps avait besoin.",
-            "content": "<p>Dites adieu aux douleurs menstruelles et aux gênes du quotidien.<br/>Notre bouillotte chauffante rechargeable vous offre une chaleur douce, où que vous soyez.</p>",
+            "title": "",
+            "content": "",
             "button_url": "",
             "button_text": ""
           }
@@ -260,7 +260,7 @@
         "item_zyzLj7": {
           "type": "item",
           "settings": {
-            "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
+            "image": "shopify://shop_images/5_dfc17cb5-3450-4659-8c7a-1827f1ec9cfb.webp",
             "image_rotation_degrees": 0,
             "subheading": ".",
             "title": "",
@@ -811,6 +811,48 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
+    },
+    "image_with_text_overlay_mjinLd": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_aTictn": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "heading_qKLfFd": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_tiUE8Y": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_aTictn",
+        "heading_qKLfFd",
+        "richtext_tiUE8Y"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0
+      }
     }
   },
   "order": [
@@ -832,6 +874,7 @@
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
-    "faq"
+    "faq",
+    "image_with_text_overlay_mjinLd"
   ]
 }
