@@ -74,8 +74,8 @@
             "icon_position": "aligned",
             "icon": "none",
             "icon_width": 24,
-            "title": " 💌 Offre de Saint-Valentin",
-            "content": "<p> -10% sur votre première commande —<strong> </strong>Code : LOVE10</p>",
+            "title": "Offre de bienvenue",
+            "content": "<p> -10% sur votre première commande —<strong> </strong>Code : BIENVENUE10</p>",
             "background": "#f2f2f2",
             "text_color": "#1a1a1a"
           }
@@ -507,6 +507,31 @@
         "button_background": "",
         "button_text_color": ""
       }
+    },
+    "before_after_image_fmPB8E": {
+      "type": "before-after-image",
+      "name": "Before/after image",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Avant/Après",
+        "content": "",
+        "before_image": "shopify://shop_images/IMG_1548.webp",
+        "after_image": "shopify://shop_images/IMG_1547.webp",
+        "expand_image": false,
+        "text_position": "center",
+        "before_after_text_position": "top",
+        "before_text": "Avant",
+        "after_text": "Après",
+        "drag_initial_position": 50,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "before_text_color": "#ffffff",
+        "after_text_color": "#ffffff",
+        "drag_cursor_background": "#ffffff",
+        "drag_cursor_color": "#000000"
+      }
     }
   },
   "order": [
@@ -518,6 +543,7 @@
     "testimonials_DHpjiM",
     "multiple_images_with_text_bdyGKJ",
     "rich_text_QUfbUt",
-    "multiple_images_with_text_wDtqJm"
+    "multiple_images_with_text_wDtqJm",
+    "before_after_image_fmPB8E"
   ]
 }
