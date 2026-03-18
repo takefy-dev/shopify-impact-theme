@@ -194,7 +194,7 @@
         "subheading_pKqL4k": {
           "type": "subheading",
           "settings": {
-            "text": "TECHNOLOGIE CHALEURDOUCE™"
+            "text": "TECHNOLOGIE ChaleurDouce™"
           }
         },
         "heading_RQ7fNh": {
@@ -522,90 +522,6 @@
         "button_text_color": "#ffffff"
       }
     },
-    "rich_text_Jiq6fa": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_EAqrej": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_UGXpHa": {
-          "type": "heading",
-          "settings": {
-            "text": "Déjà plus de 100 000 clients satisfaits ⭐⭐⭐⭐⭐",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_NMLhgX": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_EAqrej",
-        "heading_UGXpHa",
-        "richtext_NMLhgX"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "center",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
-    "multiple_images_with_text_rM3gUa": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_nxAyyN": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5833.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "⭐⭐⭐⭐⭐",
-            "title": "Inès P.",
-            "content": "<p>J’adore le design rose poudré, super féminin et discret.<br/>Elle est toute fine, facile à recharger, et la chaleur est constante 😍</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        },
-        "item_XLWDGU": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5834.webp",
-            "image_rotation_degrees": 1.5,
-            "subheading": "⭐⭐⭐⭐⭐",
-            "title": "Nina T.",
-            "content": "<p>Franchement, je ne pensais pas qu’une bouillotte pouvait changer autant mon confort. Je l’utilise pendant mes règles, mais aussi quand j’ai mal au dos ou au ventre après le sport.<br/>Un vrai indispensable !</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_nxAyyN",
-        "item_XLWDGU"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "blog_posts_e8VnV9": {
       "type": "blog-posts",
       "blocks": {
@@ -745,43 +661,6 @@
     },
     "177384083016474427": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_133db67_BHBkXk": {
-          "type": "ai_gen_block_133db67",
-          "settings": {
-            "title": "Ce que disent nos clients",
-            "subtitle": "Des avis authentiques de clients satisfaits",
-            "title_size": 36,
-            "subtitle_size": 16,
-            "review_1_name": "Manon T.",
-            "review_1_rating": 5,
-            "review_1_text": "",
-            "review_1_date": "",
-            "review_2_name": "",
-            "review_2_rating": 5,
-            "review_2_text": "",
-            "review_2_date": "",
-            "review_3_name": "",
-            "review_3_rating": 5,
-            "review_3_text": "",
-            "review_3_date": "",
-            "desktop_width_percent": 100,
-            "background_color": "#ffffff",
-            "card_background": "#f9f9f9",
-            "text_color": "#1a1a1a",
-            "star_color": "#f0c417",
-            "primary_color": "#f0c417",
-            "secondary_color": "#803cee",
-            "border_radius": 24,
-            "card_border_radius": 16,
-            "photo_border_radius": 12
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_133db67_BHBkXk"
-      ],
       "settings": {}
     },
     "1773841534ee15a2be": {
@@ -790,8 +669,8 @@
         "ai_gen_block_80d196c_igH886": {
           "type": "ai_gen_block_80d196c",
           "settings": {
-            "title": "Ce que disent nos clients",
-            "subtitle": "Des milliers de clients satisfaits",
+            "title": "Avis clients",
+            "subtitle": "",
             "title_size": 32,
             "subtitle_size": 16,
             "title_color": "#1a1a1a",
@@ -863,8 +742,6 @@
     "scrolling_text_ybyVAw",
     "video_Dh8V9N",
     "impact_text_DFLAjG",
-    "rich_text_Jiq6fa",
-    "multiple_images_with_text_rM3gUa",
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
