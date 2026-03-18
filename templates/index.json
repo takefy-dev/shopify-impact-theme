@@ -21,9 +21,9 @@
             "mobile_text_position": "place-self-start text-start",
             "desktop_text_position": "sm:place-self-end-start sm:text-start",
             "subheading": "",
-            "title": "Dites adieu aux douleurs menstruelles",
+            "title": "",
             "heading_tag": "h2",
-            "button_text": "Découvrir le produit",
+            "button_text": "",
             "button_link": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
             "text_color": "#ffffff",
             "button_background": "#ffffff",
@@ -48,42 +48,6 @@
         "cycle_speed": 6,
         "background": "#f2f2f2",
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
-      }
-    },
-    "impact_text_UW36ea": {
-      "type": "impact-text",
-      "blocks": {
-        "item_Rfp3Vt": {
-          "type": "item",
-          "settings": {
-            "title": "",
-            "subheading": "Votre alliée contre les crampes et les inconforts du quotidien",
-            "content": "",
-            "button_text": "",
-            "button_url": "",
-            "animate_impact_text": false,
-            "animate_impact_text_duration": 2
-          }
-        }
-      },
-      "block_order": [
-        "item_Rfp3Vt"
-      ],
-      "name": "Impact text",
-      "settings": {
-        "full_width": true,
-        "stack_mobile": true,
-        "text_alignment": "center",
-        "impact_text_style": "fill",
-        "text_divider": "none",
-        "impact_text_size_ratio": 1,
-        "background": "#f2f2f2",
-        "background_gradient": "",
-        "heading_text_color": "#f2f2f2",
-        "heading_gradient": "",
-        "text_color": "#fa95c2",
-        "button_background": "",
-        "button_text_color": ""
       }
     },
     "featured_product_wFDimW": {
@@ -732,7 +696,6 @@
   },
   "order": [
     "slideshow",
-    "impact_text_UW36ea",
     "featured_product_wFDimW",
     "rich_text_UGK9ke",
     "image_with_text_overlay_3UTKGE",
