@@ -415,22 +415,6 @@
         "background_gradient": ""
       }
     },
-    "scrolling_text_ybyVAw": {
-      "type": "scrolling-text",
-      "name": "Scrolling text",
-      "settings": {
-        "full_width": true,
-        "text": "Comment l’utiliser ? Regardez ça 👇",
-        "text_size": "xsmall",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 10,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
-      }
-    },
     "multiple_images_with_text_deXpWP": {
       "type": "multiple-images-with-text",
       "blocks": {
@@ -460,6 +444,22 @@
         "text_color": "",
         "button_background": "",
         "button_text_color": ""
+      }
+    },
+    "scrolling_text_ybyVAw": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "Comment l’utiliser ? Regardez ça 👇",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
       }
     },
     "video_Dh8V9N": {
