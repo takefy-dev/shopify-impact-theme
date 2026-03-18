@@ -486,41 +486,6 @@
         "button_text_color": "#ffffff"
       }
     },
-    "blog_posts_e8VnV9": {
-      "type": "blog-posts",
-      "blocks": {
-        "blog_PVXLdQ": {
-          "type": "blog",
-          "settings": {
-            "blog": "infos",
-            "posts_count": 3,
-            "stack_items": false
-          }
-        }
-      },
-      "block_order": [
-        "blog_PVXLdQ"
-      ],
-      "name": "Blog posts",
-      "settings": {
-        "full_width": true,
-        "show_excerpt": true,
-        "show_date": true,
-        "show_author": false,
-        "show_comments_count": false,
-        "show_category": true,
-        "subheading": "",
-        "title": "Bien-être féminin : nos articles et astuces",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "#faacc5",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": ""
-      }
-    },
     "impact_text_Qarpb7": {
       "type": "impact-text",
       "name": "Impact text",
@@ -692,6 +657,41 @@
         "ai_gen_block_80d196c_igH886"
       ],
       "settings": {}
+    },
+    "blog_posts_e8VnV9": {
+      "type": "blog-posts",
+      "blocks": {
+        "blog_PVXLdQ": {
+          "type": "blog",
+          "settings": {
+            "blog": "infos",
+            "posts_count": 3,
+            "stack_items": false
+          }
+        }
+      },
+      "block_order": [
+        "blog_PVXLdQ"
+      ],
+      "name": "Blog posts",
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": true,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "Bien-être féminin : nos articles et astuces",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#faacc5",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
     }
   },
   "order": [
@@ -701,15 +701,15 @@
     "image_with_text_overlay_3UTKGE",
     "1749041382c0470b00",
     "media-grid",
+    "1773841534ee15a2be",
     "multiple_images_with_text_deXpWP",
     "scrolling_text_ybyVAw",
     "video_Dh8V9N",
     "impact_text_DFLAjG",
-    "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
     "faq",
     "177384083016474427",
-    "1773841534ee15a2be"
+    "blog_posts_e8VnV9"
   ]
 }
