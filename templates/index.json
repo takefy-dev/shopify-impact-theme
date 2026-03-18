@@ -415,6 +415,37 @@
         "background_gradient": ""
       }
     },
+    "multiple_images_with_text_deXpWP": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_DDbjUj": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/IMG_6811.webp",
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Retrouvez enfin un moment de répit pendant vos règles les plus sensibles",
+            "content": "<p>En quelques secondes, la ceinture réchauffe en profondeur le bas-ventre, la chaleur détend les muscles, les crampes se calment et la douleur devient plus supportable.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_DDbjUj"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "1773841534ee15a2be": {
       "type": "_blocks",
       "blocks": {
@@ -480,37 +511,6 @@
         "ai_gen_block_80d196c_igH886"
       ],
       "settings": {}
-    },
-    "multiple_images_with_text_deXpWP": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_DDbjUj": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/IMG_6811.webp",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Retrouvez enfin un moment de répit pendant vos règles les plus sensibles",
-            "content": "<p>En quelques secondes, la ceinture réchauffe en profondeur le bas-ventre, la chaleur détend les muscles, les crampes se calment et la douleur devient plus supportable.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_DDbjUj"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     },
     "scrolling_text_ybyVAw": {
       "type": "scrolling-text",
@@ -702,12 +702,12 @@
     "impact_text_DFLAjG",
     "1749041382c0470b00",
     "media-grid",
-    "1773841534ee15a2be",
     "multiple_images_with_text_deXpWP",
     "scrolling_text_ybyVAw",
     "video_Dh8V9N",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
+    "1773841534ee15a2be",
     "faq",
     "177384083016474427",
     "blog_posts_e8VnV9"
