@@ -753,7 +753,7 @@
             "subtitle": "Des avis authentiques de clients satisfaits",
             "title_size": 36,
             "subtitle_size": 16,
-            "review_1_name": "",
+            "review_1_name": "Manon T.",
             "review_1_rating": 5,
             "review_1_text": "",
             "review_1_date": "",
@@ -783,6 +783,72 @@
         "ai_gen_block_133db67_BHBkXk"
       ],
       "settings": {}
+    },
+    "1773841534ee15a2be": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_80d196c_igH886": {
+          "type": "ai_gen_block_80d196c",
+          "settings": {
+            "title": "Ce que disent nos clients",
+            "subtitle": "Des milliers de clients satisfaits",
+            "title_size": 32,
+            "subtitle_size": 16,
+            "title_color": "#1a1a1a",
+            "subtitle_color": "#666666",
+            "header_spacing": 40,
+            "columns_desktop": "2",
+            "desktop_width_percent": 100,
+            "section_padding": 50,
+            "card_spacing": 20,
+            "background_color": "#ffffff",
+            "card_background": "#fafafa",
+            "card_border_radius": 16,
+            "card_padding": 25,
+            "image_size": 80,
+            "image_border_radius": 10,
+            "name_size": 16,
+            "text_size": 14,
+            "name_color": "#1a1a1a",
+            "text_color": "#666666",
+            "star_size": 16,
+            "star_color": "#FFB800",
+            "review_1_enabled": true,
+            "review_1_image": "shopify://shop_images/Image_prod_modifications.avif",
+            "review_1_name": "Sophie M.",
+            "review_1_rating": 5,
+            "review_1_text": "Reçu rapidement et bien emballé. Ça chauffe bien et les vibrations sont agréables, même sur un t shirt",
+            "review_2_enabled": true,
+            "review_2_image": "shopify://shop_images/A0e6b18140a4445cfb7b3db8cae9bace9U_jpg.avif",
+            "review_2_name": "Marc L.",
+            "review_2_rating": 5,
+            "review_2_text": "Je l’ai pris pour ma copine et elle l’utilise tout le temps maintenant 😅 elle m’a dit que ça lui changeait la vie pendant ses règles.",
+            "review_3_enabled": true,
+            "review_3_image": "shopify://shop_images/IMG_6298_2.heic",
+            "review_3_name": "Julie D.",
+            "review_3_rating": 5,
+            "review_3_text": "Trop bien, surtout quand t’as mal et que tu dois quand même sortir… je peux le garder sous les vêtements sans problème.",
+            "review_4_enabled": true,
+            "review_4_image": "shopify://shop_images/114a897bee8483469cc4960703649836.jpg",
+            "review_4_name": "Thomas B.",
+            "review_4_rating": 5,
+            "review_4_text": "Offert à ma copine, elle était trop contente. Livraison rapide en plus 👍",
+            "review_5_enabled": false,
+            "review_5_name": "Emma R.",
+            "review_5_rating": 5,
+            "review_5_text": "Je suis impressionnée par la qualité du produit. C'est exactement ce que je cherchais. Merci beaucoup !",
+            "review_6_enabled": false,
+            "review_6_name": "Pierre C.",
+            "review_6_rating": 5,
+            "review_6_text": "Service impeccable et produit de grande qualité. Je recommande cette boutique les yeux fermés !"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_80d196c_igH886"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -803,6 +869,7 @@
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
     "faq",
-    "177384083016474427"
+    "177384083016474427",
+    "1773841534ee15a2be"
   ]
 }
