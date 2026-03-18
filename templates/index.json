@@ -188,6 +188,56 @@
         "input_text_color": ""
       }
     },
+    "rich_text_UGK9ke": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_pKqL4k": {
+          "type": "subheading",
+          "settings": {
+            "text": "TECHNOLOGIE CHALEURDOUCE™"
+          }
+        },
+        "heading_RQ7fNh": {
+          "type": "heading",
+          "settings": {
+            "text": "APAISER N'A JAMAIS ÉTÉ AUSSI SIMPLE.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_iN3XnH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Chaleur + massage. Confort en quelques minutes.</p>"
+          }
+        },
+        "image_XAxqRp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pKqL4k",
+        "heading_RQ7fNh",
+        "richtext_iN3XnH",
+        "image_XAxqRp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "image_with_text_overlay_3UTKGE": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -240,56 +290,6 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 6
-      }
-    },
-    "rich_text_UGK9ke": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_pKqL4k": {
-          "type": "subheading",
-          "settings": {
-            "text": "TECHNOLOGIE CHALEURDOUCE™"
-          }
-        },
-        "heading_RQ7fNh": {
-          "type": "heading",
-          "settings": {
-            "text": "APAISER N'A JAMAIS ÉTÉ AUSSI SIMPLE.",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_iN3XnH": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Chaleur + massage. Confort en quelques minutes.</p>"
-          }
-        },
-        "image_XAxqRp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
-            "width_mode": "custom",
-            "max_width": 600,
-            "mobile_max_width": 400
-          }
-        }
-      },
-      "block_order": [
-        "subheading_pKqL4k",
-        "heading_RQ7fNh",
-        "richtext_iN3XnH",
-        "image_XAxqRp"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     },
     "1749041382c0470b00": {
@@ -790,8 +790,8 @@
     "slideshow",
     "impact_text_UW36ea",
     "featured_product_wFDimW",
-    "image_with_text_overlay_3UTKGE",
     "rich_text_UGK9ke",
+    "image_with_text_overlay_3UTKGE",
     "1749041382c0470b00",
     "media-grid",
     "scrolling_text_ybyVAw",
