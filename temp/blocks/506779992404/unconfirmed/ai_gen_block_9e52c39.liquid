@@ -1,6 +1,723 @@
+{% doc %}
+  @prompt
+    Créer une section d’avis clients avec un design moderne et minimaliste.
+    
+    Chaque avis doit contenir :
+    - une petite photo carrée (format 1:1)
+    - le prénom + première lettre du nom
+    - une note avec 5 étoiles
+    - un court texte (2-3 lignes)
+    
+    Disposition :
+    - photo à gauche
+    - nom + étoiles à droite de la photo
+    - texte en dessous
+    
+    Les images doivent être petites (environ 80 à 100px), avec coins arrondis.
+    
+    Ajouter 4 à 6 avis visibles.
+    
+    Style :
+    - design propre, premium, esthétique
+    - espacement équilibré
+    - facile à lire sur mobile
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-reviews-section-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    padding: {{ block.settings.section_padding }}px 20px;
+    background-color: {{ block.settings.background_color }};
+    display: block;
+  }
+
+  .ai-reviews-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-reviews-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_spacing }}px;
+  }
+
+  .ai-reviews-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 12px 0;
+    font-weight: 600;
+  }
+
+  .ai-reviews-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+  }
+
+  .ai-reviews-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: {{ block.settings.review_spacing }}px;
+  }
+
+  .ai-review-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    padding: {{ block.settings.card_padding }}px;
+    border-radius: {{ block.settings.card_border_radius }}px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid {{ block.settings.card_border_color }};
+  }
+
+  .ai-review-header-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .ai-review-image-wrapper-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.image_size }}px;
+    height: {{ block.settings.image_size }}px;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+  }
+
+  .ai-review-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-review-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-review-image-placeholder-{{ ai_gen_id }} svg {
+    width: 50%;
+    height: 50%;
+    opacity: 0.3;
+  }
+
+  .ai-review-info-{{ ai_gen_id }} {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ai-review-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.name_size }}px;
+    color: {{ block.settings.name_color }};
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .ai-review-stars-{{ ai_gen_id }} {
+    display: flex;
+    gap: 4px;
+  }
+
+  .ai-review-star-{{ ai_gen_id }} {
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-review-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.text_size }}px;
+    color: {{ block.settings.text_color }};
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-reviews-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-reviews-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_size }}px * 0.8);
+    }
+
+    .ai-reviews-subtitle-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.subtitle_size }}px * 0.9);
+    }
+
+    .ai-review-image-wrapper-{{ ai_gen_id }} {
+      width: calc({{ block.settings.image_size }}px * 0.85);
+      height: calc({{ block.settings.image_size }}px * 0.85);
+    }
+  }
+{% endstyle %}
+
+<customer-reviews-{{ ai_gen_id }} class="ai-reviews-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-reviews-container-{{ ai_gen_id }}">
+    {% if block.settings.title != blank or block.settings.subtitle != blank %}
+      <div class="ai-reviews-header-{{ ai_gen_id }}">
+        {% if block.settings.title != blank %}
+          <h2 class="ai-reviews-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+        {% endif %}
+        {% if block.settings.subtitle != blank %}
+          <div class="ai-reviews-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-reviews-grid-{{ ai_gen_id }}">
+      {% for i in (1..6) %}
+        {% liquid
+          assign review_enabled_key = 'review_' | append: i | append: '_enabled'
+          assign review_image_key = 'review_' | append: i | append: '_image'
+          assign review_name_key = 'review_' | append: i | append: '_name'
+          assign review_rating_key = 'review_' | append: i | append: '_rating'
+          assign review_text_key = 'review_' | append: i | append: '_text'
+
+          assign review_enabled = block.settings[review_enabled_key]
+          assign review_image = block.settings[review_image_key]
+          assign review_name = block.settings[review_name_key]
+          assign review_rating = block.settings[review_rating_key]
+          assign review_text = block.settings[review_text_key]
+        %}
+
+        {% if review_enabled %}
+          <div class="ai-review-card-{{ ai_gen_id }}">
+            <div class="ai-review-header-{{ ai_gen_id }}">
+              <div class="ai-review-image-wrapper-{{ ai_gen_id }}">
+                {% if review_image %}
+                  <img
+                    src="{{ review_image | image_url: width: 200 }}"
+                    alt="{{ review_name | escape }}"
+                    class="ai-review-image-{{ ai_gen_id }}"
+                    loading="lazy"
+                    width="200"
+                    height="200"
+                  >
+                {% else %}
+                  <div class="ai-review-image-placeholder-{{ ai_gen_id }}">
+                    {{ 'image' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              </div>
+
+              <div class="ai-review-info-{{ ai_gen_id }}">
+                {% if review_name != blank %}
+                  <h3 class="ai-review-name-{{ ai_gen_id }}">{{ review_name }}</h3>
+                {% endif %}
+
+                <div class="ai-review-stars-{{ ai_gen_id }}">
+                  {% for star in (1..5) %}
+                    {% if star <= review_rating %}
+                      <svg class="ai-review-star-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    {% else %}
+                      <svg class="ai-review-star-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: #e0e0e0;">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                      </svg>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+
+            {% if review_text != blank %}
+              <p class="ai-review-text-{{ ai_gen_id }}">{{ review_text }}</p>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</customer-reviews-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CustomerReviews{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('customer-reviews-{{ ai_gen_id }}', CustomerReviews{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Avis clients",
+  "settings": [
+    {
+      "type": "header",
+      "content": "En-tête"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Titre",
+      "default": "Ce que nos clients disent"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Des milliers de clients satisfaits"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "header_spacing",
+      "label": "Espacement en-tête",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Disposition"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Largeur bureau",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Colonnes sur bureau",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "label": "Espacement section",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "review_spacing",
+      "label": "Espacement entre avis",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Style des cartes"
+    },
+    {
+      "type": "range",
+      "id": "card_padding",
+      "label": "Espacement interne",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Fond de carte",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Couleur bordure",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "range",
+      "id": "image_size",
+      "label": "Taille image",
+      "min": 60,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Arrondi image",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Étoiles"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Taille étoiles",
+      "min": 12,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur étoiles",
+      "default": "#FFB800"
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Fond section",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur sous-titre",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "name_color",
+      "label": "Couleur nom",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "name_size",
+      "label": "Taille nom",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur texte",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille texte",
+      "min": 12,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "header",
+      "content": "Avis 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_1_enabled",
+      "label": "Activer avis 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "review_1_image",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "review_1_name",
+      "label": "Nom",
+      "default": "Sophie M."
+    },
+    {
+      "type": "range",
+      "id": "review_1_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "review_1_text",
+      "label": "Texte",
+      "default": "Produit de qualité exceptionnelle. Je recommande vivement à tous ceux qui cherchent une solution efficace."
+    },
+    {
+      "type": "header",
+      "content": "Avis 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_2_enabled",
+      "label": "Activer avis 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "review_2_image",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "review_2_name",
+      "label": "Nom",
+      "default": "Marie L."
+    },
+    {
+      "type": "range",
+      "id": "review_2_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "review_2_text",
+      "label": "Texte",
+      "default": "Très satisfaite de mon achat. Le service client est réactif et le produit correspond parfaitement à mes attentes."
+    },
+    {
+      "type": "header",
+      "content": "Avis 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_3_enabled",
+      "label": "Activer avis 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "review_3_image",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "review_3_name",
+      "label": "Nom",
+      "default": "Julie D."
+    },
+    {
+      "type": "range",
+      "id": "review_3_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "review_3_text",
+      "label": "Texte",
+      "default": "Un excellent rapport qualité-prix. Je l'utilise quotidiennement et je constate de vrais résultats."
+    },
+    {
+      "type": "header",
+      "content": "Avis 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_4_enabled",
+      "label": "Activer avis 4",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "review_4_image",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "review_4_name",
+      "label": "Nom",
+      "default": "Camille B."
+    },
+    {
+      "type": "range",
+      "id": "review_4_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "review_4_text",
+      "label": "Texte",
+      "default": "Livraison rapide et produit conforme. Je suis ravie de cet achat et je le recommande sans hésitation."
+    },
+    {
+      "type": "header",
+      "content": "Avis 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_5_enabled",
+      "label": "Activer avis 5",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "review_5_image",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "review_5_name",
+      "label": "Nom",
+      "default": "Emma R."
+    },
+    {
+      "type": "range",
+      "id": "review_5_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "review_5_text",
+      "label": "Texte",
+      "default": "Produit de grande qualité qui a dépassé mes espérances. Je recommande les yeux fermés."
+    },
+    {
+      "type": "header",
+      "content": "Avis 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "review_6_enabled",
+      "label": "Activer avis 6",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "review_6_image",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "review_6_name",
+      "label": "Nom",
+      "default": "Léa P."
+    },
+    {
+      "type": "range",
+      "id": "review_6_rating",
+      "label": "Note",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "textarea",
+      "id": "review_6_text",
+      "label": "Texte",
+      "default": "Très bon produit, efficace et facile à utiliser. Le design est élégant et moderne."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis clients"
+    }
+  ],
+  "tag": null
+}
 {% endschema %}
