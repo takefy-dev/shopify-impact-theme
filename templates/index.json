@@ -50,60 +50,6 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "image_with_text_overlay_3UTKGE": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_XgTmeX": {
-          "type": "heading",
-          "settings": {
-            "text": "Soulage tes douleurs avec douceur",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_dNWRqi": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        },
-        "richtext_dpqmw9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Conçue pour t’accompagner tout au long de la journée, cette ceinture chauffante te procure un moment d’apaisement tout en restant discrète et élégante. Parce que ton confort ne devrait jamais attendre.</p>"
-          }
-        },
-        "button_AEknTb": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "sm",
-            "text": "Découvrir la ceinture",
-            "url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
-            "background": "#ffffff",
-            "text_color": "#f99ac5"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XgTmeX",
-        "richtext_dNWRqi",
-        "richtext_dpqmw9",
-        "button_AEknTb"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/a983f246c33d463ad18a78ff4c458add.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 6
-      }
-    },
     "featured_product_wFDimW": {
       "type": "featured-product",
       "blocks": {
@@ -377,6 +323,60 @@
         "mobile_row_height": 150,
         "background": "",
         "background_gradient": ""
+      }
+    },
+    "image_with_text_overlay_3UTKGE": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_XgTmeX": {
+          "type": "heading",
+          "settings": {
+            "text": "Soulage tes douleurs avec douceur",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_dNWRqi": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "richtext_dpqmw9": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Conçue pour t’accompagner tout au long de la journée, cette ceinture chauffante te procure un moment d’apaisement tout en restant discrète et élégante. Parce que ton confort ne devrait jamais attendre.</p>"
+          }
+        },
+        "button_AEknTb": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "sm",
+            "text": "Découvrir la ceinture",
+            "url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
+            "background": "#ffffff",
+            "text_color": "#f99ac5"
+          }
+        }
+      },
+      "block_order": [
+        "heading_XgTmeX",
+        "richtext_dNWRqi",
+        "richtext_dpqmw9",
+        "button_AEknTb"
+      ],
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "sm",
+        "image": "shopify://shop_images/a983f246c33d463ad18a78ff4c458add.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 6
       }
     },
     "multiple_images_with_text_deXpWP": {
@@ -696,12 +696,12 @@
   },
   "order": [
     "slideshow",
-    "image_with_text_overlay_3UTKGE",
     "featured_product_wFDimW",
     "rich_text_UGK9ke",
     "1749041382c0470b00",
     "media-grid",
     "multiple_images_with_text_deXpWP",
+    "image_with_text_overlay_3UTKGE",
     "scrolling_text_ybyVAw",
     "video_Dh8V9N",
     "impact_text_Qarpb7",
