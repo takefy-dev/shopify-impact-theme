@@ -742,48 +742,6 @@
         "accordion_background": "",
         "accordion_text_color": ""
       }
-    },
-    "image_with_text_overlay_xARXhH": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_x6AXCB": {
-          "type": "subheading",
-          "settings": {
-            "text": ""
-          }
-        },
-        "heading_MUKLzA": {
-          "type": "heading",
-          "settings": {
-            "text": "",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_Up9YdX": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "subheading_x6AXCB",
-        "heading_MUKLzA",
-        "richtext_Up9YdX"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0
-      }
     }
   },
   "order": [
@@ -794,8 +752,8 @@
     "image_with_text_overlay_3UTKGE",
     "1749041382c0470b00",
     "media-grid",
-    "scrolling_text_ybyVAw",
     "multiple_images_with_text_deXpWP",
+    "scrolling_text_ybyVAw",
     "video_Dh8V9N",
     "impact_text_DFLAjG",
     "rich_text_Jiq6fa",
@@ -803,7 +761,6 @@
     "blog_posts_e8VnV9",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
-    "faq",
-    "image_with_text_overlay_xARXhH"
+    "faq"
   ]
 }
