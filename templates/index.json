@@ -292,65 +292,6 @@
         "text_color": ""
       }
     },
-    "multi_column_63zijf": {
-      "type": "multi-column",
-      "blocks": {
-        "item_LUH76V": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "🔥 Chauffe rapide",
-            "heading_tag": "h4",
-            "content": "<p>3 niveaux de température pour un soulagement immédiat.</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_mwqUrd": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "💆‍♀️ Soulagement naturel",
-            "heading_tag": "h4",
-            "content": "<p>Apaisement sans médicament, tout en douceur</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        },
-        "item_WxHYRq": {
-          "type": "item",
-          "settings": {
-            "column_size": "3",
-            "title": "👚 Discrète à porter",
-            "heading_tag": "h4",
-            "content": "<p>Fine et douce, elle se glisse sous les vêtements</p>",
-            "link_url": "",
-            "link_text": "",
-            "link_style": "link"
-          }
-        }
-      },
-      "block_order": [
-        "item_LUH76V",
-        "item_mwqUrd",
-        "item_WxHYRq"
-      ],
-      "name": "Multi-column",
-      "settings": {
-        "full_width": true,
-        "stack_on_mobile": false,
-        "gap": "small",
-        "text_alignment": "start",
-        "subheading": "Un soulagement qui allie efficacité, douceur et discrétion.",
-        "title": "Pourquoi choisir Chaleur Douce ?",
-        "content": "",
-        "background": "#faacc5",
-        "background_gradient": "",
-        "text_color": "#ffffff"
-      }
-    },
     "1749041382c0470b00": {
       "type": "apps",
       "settings": {
@@ -851,7 +792,6 @@
     "featured_product_wFDimW",
     "image_with_text_overlay_3UTKGE",
     "rich_text_UGK9ke",
-    "multi_column_63zijf",
     "1749041382c0470b00",
     "media-grid",
     "scrolling_text_ybyVAw",
