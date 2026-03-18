@@ -242,6 +242,56 @@
         "overlay_opacity": 6
       }
     },
+    "rich_text_UGK9ke": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_pKqL4k": {
+          "type": "subheading",
+          "settings": {
+            "text": "TECHNOLOGIE CHALEURDOUCE™"
+          }
+        },
+        "heading_RQ7fNh": {
+          "type": "heading",
+          "settings": {
+            "text": "APAISER N'A JAMAIS ÉTÉ AUSSI SIMPLE.",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_iN3XnH": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Chaleur + massage. Confort en quelques minutes.</p>"
+          }
+        },
+        "image_XAxqRp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
+            "width_mode": "custom",
+            "max_width": 600,
+            "mobile_max_width": 400
+          }
+        }
+      },
+      "block_order": [
+        "subheading_pKqL4k",
+        "heading_RQ7fNh",
+        "richtext_iN3XnH",
+        "image_XAxqRp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "multi_column_63zijf": {
       "type": "multi-column",
       "blocks": {
@@ -792,46 +842,6 @@
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 0
-      }
-    },
-    "rich_text_UGK9ke": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_pKqL4k": {
-          "type": "subheading",
-          "settings": {
-            "text": "TECHNOLOGIE CHALEURDOUCE™"
-          }
-        },
-        "heading_RQ7fNh": {
-          "type": "heading",
-          "settings": {
-            "text": "APAISER N'A JAMAIS ÉTÉ AUSSI SIMPLE.",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_iN3XnH": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Chaleur + massage. Confort en quelques minutes.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_pKqL4k",
-        "heading_RQ7fNh",
-        "richtext_iN3XnH"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
       }
     }
   },
