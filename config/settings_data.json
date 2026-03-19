@@ -29,10 +29,10 @@
     "secondary_button_text_color": "#1a1a1a",
     "product_card_text_color": "#1a1a1a",
     "product_primary_badge_background": "#803cee",
-    "heading_font": "fraunces_n4",
+    "heading_font": "playfair_display_n4",
     "heading_font_size": "medium",
     "heading_letter_spacing": -2,
-    "text_font": "sans_serif_n4",
+    "text_font": "inter_n4",
     "show_page_transition": true,
     "heading_apparition": "split_fade",
     "show_product_rating": false,
@@ -55,11 +55,6 @@
       "17676059084223943535": {
         "type": "shopify://apps/triplewhale/blocks/triple_pixel_snippet/483d496b-3f1a-4609-aea7-8eee3b6b7a2a",
         "disabled": false,
-        "settings": {}
-      },
-      "pagefly-page-builder": {
-        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
-        "disabled": true,
         "settings": {}
       }
     }
