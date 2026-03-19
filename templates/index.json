@@ -177,56 +177,6 @@
       ],
       "settings": {}
     },
-    "rich_text_UGK9ke": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_pKqL4k": {
-          "type": "subheading",
-          "settings": {
-            "text": "TECHNOLOGIE ChaleurDouce™"
-          }
-        },
-        "heading_RQ7fNh": {
-          "type": "heading",
-          "settings": {
-            "text": "APAISER N'A JAMAIS ÉTÉ AUSSI SIMPLE.",
-            "heading_tag": "h3",
-            "text_color": "",
-            "gradient": ""
-          }
-        },
-        "richtext_iN3XnH": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Chaleur + massage. Confort en quelques minutes.</p>"
-          }
-        },
-        "image_XAxqRp": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/4_52df600c-98b8-49d1-b962-d23fd7f95e9e.webp",
-            "width_mode": "custom",
-            "max_width": 600,
-            "mobile_max_width": 400
-          }
-        }
-      },
-      "block_order": [
-        "subheading_pKqL4k",
-        "heading_RQ7fNh",
-        "richtext_iN3XnH",
-        "image_XAxqRp"
-      ],
-      "name": "Rich text",
-      "settings": {
-        "full_width": true,
-        "content_width": "small",
-        "text_position": "start",
-        "background": "",
-        "background_gradient": "",
-        "text_color": ""
-      }
-    },
     "1749041382c0470b00": {
       "type": "apps",
       "settings": {
@@ -276,113 +226,6 @@
         "ai_gen_block_eac4489_6RhmPB"
       ],
       "settings": {}
-    },
-    "media-grid": {
-      "type": "media-grid",
-      "blocks": {
-        "item-1": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/7_8b28a131-8671-4352-8f09-c25967fe3bf9.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 2,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-2": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/IMG_5682_3.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "29246d34-c6e0-4373-84f6-b15e57736a00": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/IMG_6821.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 2,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#000000",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "item-3": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/11_e92ac657-14c0-4310-b9cd-9b555b74d085.webp",
-            "title": "",
-            "heading_tag": "h4",
-            "link_url": "",
-            "link_text": "",
-            "mobile_text_position": "place-self-center text-center",
-            "desktop_column_span": 1,
-            "desktop_row_span": 1,
-            "desktop_text_position": "sm:place-self-center sm:text-center",
-            "background": "#1a1a1a",
-            "background_gradient": "",
-            "text_color": "#ffffff",
-            "text_gradient": "",
-            "button_background": "#000000",
-            "button_text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "29246d34-c6e0-4373-84f6-b15e57736a00",
-        "item-3"
-      ],
-      "settings": {
-        "full_width": true,
-        "reduce_width": false,
-        "desktop_row_height": 290,
-        "mobile_row_height": 150,
-        "background": "",
-        "background_gradient": ""
-      }
     },
     "multiple_images_with_text_deXpWP": {
       "type": "multiple-images-with-text",
@@ -768,10 +611,8 @@
     "177394455575839292",
     "featured_product_wFDimW",
     "17739454542abf8663",
-    "rich_text_UGK9ke",
     "1749041382c0470b00",
     "177394505812eb6a75",
-    "media-grid",
     "multiple_images_with_text_deXpWP",
     "image_with_text_overlay_3UTKGE",
     "scrolling_text_ybyVAw",
