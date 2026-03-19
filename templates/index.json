@@ -731,6 +731,37 @@
         "ai_gen_block_eac4489_6RhmPB"
       ],
       "settings": {}
+    },
+    "17739454542abf8663": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_64c7342_bg7f4j": {
+          "type": "ai_gen_block_64c7342",
+          "settings": {
+            "text_1": "Confort partout",
+            "text_2": "Cycle apaisé",
+            "text_3": "Soulagement immédiat",
+            "text_4": "Fini les crampes",
+            "separator": "•",
+            "band_height": 12,
+            "background_color": "#f5f5f5",
+            "text_color": "#1a1a1a",
+            "separator_color": "#1a1a1a",
+            "font_size": 14,
+            "font_size_mobile": 12,
+            "font_weight": "400",
+            "letter_spacing": 0.5,
+            "text_spacing": 60,
+            "text_spacing_mobile": 40,
+            "animation_duration": 40
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_64c7342_bg7f4j"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -750,6 +781,7 @@
     "faq",
     "177384083016474427",
     "blog_posts_e8VnV9",
-    "177394505812eb6a75"
+    "177394505812eb6a75",
+    "17739454542abf8663"
   ]
 }
