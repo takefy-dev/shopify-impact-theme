@@ -258,91 +258,13 @@
         "button_text_color": ""
       }
     },
-    "image_with_text_overlay_3UTKGE": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "heading_XgTmeX": {
-          "type": "heading",
-          "settings": {
-            "text": "Soulage tes douleurs avec douceur",
-            "heading_tag": "h2"
-          }
-        },
-        "richtext_dNWRqi": {
-          "type": "richtext",
-          "settings": {
-            "content": ""
-          }
-        },
-        "richtext_dpqmw9": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Conçue pour t’accompagner tout au long de la journée, cette ceinture chauffante te procure un moment d’apaisement tout en restant discrète et élégante. Parce que ton confort ne devrait jamais attendre.</p>"
-          }
-        },
-        "button_AEknTb": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "sm",
-            "text": "Découvrir la ceinture",
-            "url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
-            "background": "#ffffff",
-            "text_color": "#f99ac5"
-          }
-        }
-      },
-      "block_order": [
-        "heading_XgTmeX",
-        "richtext_dNWRqi",
-        "richtext_dpqmw9",
-        "button_AEknTb"
-      ],
-      "name": "Image with text overlay",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "sm",
-        "image": "shopify://shop_images/a983f246c33d463ad18a78ff4c458add.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 6
-      }
-    },
-    "video_Dh8V9N": {
-      "type": "video",
-      "blocks": {
-        "play_xJULJK": {
-          "type": "play",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "play_xJULJK"
-      ],
-      "name": "Video",
-      "settings": {
-        "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
-        "video_size": "auto",
-        "video": "shopify://files/videos/video (2).mp4",
-        "external_video_url": "",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
-      }
-    },
     "1773944189ad8173e5": {
       "type": "_blocks",
       "blocks": {
         "ai_gen_block_13f1c4d_V7JLmJ": {
           "type": "ai_gen_block_13f1c4d",
           "settings": {
-            "heading": "Pourquoi choisir notre produit ?",
+            "heading": "ChaleurDouce vs bouillotte classique",
             "heading_size": 32,
             "heading_color": "#1a1a1a",
             "column_1_header": "Caractéristiques",
@@ -598,8 +520,6 @@
     "1749041382c0470b00",
     "177394505812eb6a75",
     "multiple_images_with_text_deXpWP",
-    "image_with_text_overlay_3UTKGE",
-    "video_Dh8V9N",
     "1773944189ad8173e5",
     "impact_text_Qarpb7",
     "1773841534ee15a2be",
