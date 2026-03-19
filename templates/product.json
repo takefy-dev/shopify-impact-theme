@@ -247,7 +247,7 @@
             "video_spacing": 25,
             "video_border_radius": 24,
             "mobile_layout": "scroll",
-            "title_size": 36,
+            "title_size": 32,
             "title_color": "#1a1a1a",
             "subtitle_size": 16,
             "subtitle_color": "#666666"
