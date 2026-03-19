@@ -1,6 +1,306 @@
+{% doc %}
+  @prompt
+    Créer une bande horizontale scrollante (marquee) fine.
+    
+    Contenu :
+    - texte qui défile en continu avec les phrases suivantes :
+    Confort partout - Cycle apaisé - Soulagement immédiat - Fini les crampes
+    
+    Design :
+    - bande peu épaisse (fine)
+    - couleur de fond gris clair
+    - texte centré verticalement
+    - texte lisible et espacé
+    
+    Animation :
+    - défilement lent et fluide (pas rapide)
+    - boucle infinie sans coupure
+    
+    IMPORTANT :
+    - espacement entre chaque phrase
+    - texte non collé aux bords
+    - rendu fluide et élégant
+    
+    Responsive mobile :
+    - bande adaptée au mobile
+    - texte toujours lisible
+    - pas trop rapide
+    
+    Style :
+    - minimaliste
+    - moderne
+    - adapté à une marque beauté
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-marquee-container-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    overflow: hidden;
+    padding: {{ block.settings.band_height }}px 0;
+  }
+
+  .ai-marquee-wrapper-{{ ai_gen_id }} {
+    display: flex;
+    width: fit-content;
+    animation: ai-marquee-scroll-{{ ai_gen_id }} {{ block.settings.animation_duration }}s linear infinite;
+  }
+
+  .ai-marquee-content-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: {{ block.settings.text_spacing }}px;
+  }
+
+  .ai-marquee-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.font_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: {{ block.settings.font_weight }};
+    letter-spacing: {{ block.settings.letter_spacing }}px;
+  }
+
+  .ai-marquee-separator-{{ ai_gen_id }} {
+    color: {{ block.settings.separator_color }};
+    font-size: {{ block.settings.font_size }}px;
+  }
+
+  @keyframes ai-marquee-scroll-{{ ai_gen_id }} {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-marquee-text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size_mobile }}px;
+    }
+
+    .ai-marquee-separator-{{ ai_gen_id }} {
+      font-size: {{ block.settings.font_size_mobile }}px;
+    }
+
+    .ai-marquee-content-{{ ai_gen_id }} {
+      gap: {{ block.settings.text_spacing_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<marquee-banner-{{ ai_gen_id }} class="ai-marquee-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-marquee-wrapper-{{ ai_gen_id }}">
+    <div class="ai-marquee-content-{{ ai_gen_id }}">
+      {% for i in (1..2) %}
+        <span class="ai-marquee-text-{{ ai_gen_id }}">{{ block.settings.text_1 }}</span>
+        <span class="ai-marquee-separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+        <span class="ai-marquee-text-{{ ai_gen_id }}">{{ block.settings.text_2 }}</span>
+        <span class="ai-marquee-separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+        <span class="ai-marquee-text-{{ ai_gen_id }}">{{ block.settings.text_3 }}</span>
+        <span class="ai-marquee-separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+        <span class="ai-marquee-text-{{ ai_gen_id }}">{{ block.settings.text_4 }}</span>
+        <span class="ai-marquee-separator-{{ ai_gen_id }}">{{ block.settings.separator }}</span>
+      {% endfor %}
+    </div>
+  </div>
+</marquee-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class MarqueeBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.setupMarquee();
+      }
+
+      setupMarquee() {
+        const wrapper = this.querySelector('.ai-marquee-wrapper-{{ ai_gen_id }}');
+        if (!wrapper) return;
+
+        const content = this.querySelector('.ai-marquee-content-{{ ai_gen_id }}');
+        if (!content) return;
+
+        wrapper.style.willChange = 'transform';
+      }
+    }
+
+    customElements.define('marquee-banner-{{ ai_gen_id }}', MarqueeBanner{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Bande défilante",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "text",
+      "id": "text_1",
+      "label": "Texte 1",
+      "default": "Confort partout"
+    },
+    {
+      "type": "text",
+      "id": "text_2",
+      "label": "Texte 2",
+      "default": "Cycle apaisé"
+    },
+    {
+      "type": "text",
+      "id": "text_3",
+      "label": "Texte 3",
+      "default": "Soulagement immédiat"
+    },
+    {
+      "type": "text",
+      "id": "text_4",
+      "label": "Texte 4",
+      "default": "Fini les crampes"
+    },
+    {
+      "type": "text",
+      "id": "separator",
+      "label": "Séparateur",
+      "default": "•"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "band_height",
+      "label": "Hauteur de la bande",
+      "min": 8,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "separator_color",
+      "label": "Couleur du séparateur",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Taille du texte (desktop)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "font_size_mobile",
+      "label": "Taille du texte (mobile)",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Épaisseur du texte",
+      "options": [
+        {
+          "value": "300",
+          "label": "Léger"
+        },
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Moyen"
+        },
+        {
+          "value": "600",
+          "label": "Semi-gras"
+        }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "range",
+      "id": "letter_spacing",
+      "label": "Espacement des lettres",
+      "min": 0,
+      "max": 3,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0.5
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "label": "Espacement entre phrases (desktop)",
+      "min": 30,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "text_spacing_mobile",
+      "label": "Espacement entre phrases (mobile)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "animation_duration",
+      "label": "Vitesse de défilement",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "s",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bande défilante"
+    }
+  ]
+}
 {% endschema %}
