@@ -511,37 +511,6 @@
         "button_text_color": ""
       }
     },
-    "multiple_images_with_text_7qbCNc": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_qMHU9L": {
-          "type": "item",
-          "settings": {
-            "image": "shopify://shop_images/Pink_Minimalist_Skincare_Brand_Comparison_Chart_Table_Graph_1.png",
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "La différence entre Chaleur Douce et une bouillotte.",
-            "content": "<p>Pourquoi la ceinture chauffante Chaleur Douce est une solution efficace et pratique ?</p>",
-            "button_url": "shopify://products/ceinture-chauffante-chaleurdouce™-soulage-les-douleurs-menstruelles-en-quelques-minutes",
-            "button_text": "Acheter maintenant"
-          }
-        }
-      },
-      "block_order": [
-        "item_qMHU9L"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
-    },
     "1773841534ee15a2be": {
       "type": "_blocks",
       "blocks": {
@@ -748,7 +717,6 @@
     "video_Dh8V9N",
     "1773944189ad8173e5",
     "impact_text_Qarpb7",
-    "multiple_images_with_text_7qbCNc",
     "1773841534ee15a2be",
     "impact_text_DFLAjG",
     "faq",
