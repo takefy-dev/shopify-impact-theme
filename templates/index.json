@@ -697,6 +697,40 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "177394505812eb6a75": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_eac4489_6RhmPB": {
+          "type": "ai_gen_block_eac4489",
+          "settings": {
+            "title": "Rejoignez des milliers de femmes soulagées !",
+            "title_size": 32,
+            "title_color": "#1a1a1a",
+            "subtitle": "Chaque jour, elles choisissent notre ceinture pour vivre leurs règles autrement sans souffrir.",
+            "subtitle_size": 16,
+            "subtitle_color": "#666666",
+            "image_1": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.22.02.png",
+            "image_2": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.22.41.png",
+            "image_3": "shopify://shop_images/IMG_6819.webp",
+            "image_4": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.23.43.png",
+            "image_5": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.23.10.png",
+            "image_6": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.23.56.png",
+            "image_7": "shopify://shop_images/9_b6774dd7-db95-468b-8638-3ee556c608aa.webp",
+            "image_width": 300,
+            "image_height": 380,
+            "border_radius": 16,
+            "image_spacing": 20,
+            "background_color": "#ffffff",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_eac4489_6RhmPB"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -715,6 +749,7 @@
     "impact_text_DFLAjG",
     "faq",
     "177384083016474427",
-    "blog_posts_e8VnV9"
+    "blog_posts_e8VnV9",
+    "177394505812eb6a75"
   ]
 }
