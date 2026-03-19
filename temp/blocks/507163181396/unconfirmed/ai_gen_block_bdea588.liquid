@@ -1,6 +1,513 @@
+{% doc %}
+  @prompt
+    Créer une section avec :
+    
+    Un titre centré :
+    "Ce sont elles qui en parlent le mieux"
+    
+    Un sous-titre :
+    "+ 1418 femmes satisfaites"
+    
+    Ajouter en dessous une rangée de vidéos verticales (format TikTok).
+    
+    Les vidéos doivent :
+    - être affichées en format vertical (ratio 9:16)
+    - avoir des coins arrondis
+    - être de taille moyenne (pas trop grandes)
+    - être alignées horizontalement avec un scroll (carousel)
+    
+    Ajouter des flèches gauche/droite pour naviguer entre les vidéos.
+    
+    Style :
+    - design moderne et premium
+    - espacement équilibré
+    - adapté mobile
+    
+    Sur mobile :
+    - affichage en scroll horizontal
+    - vidéos bien espacées
+    - pas collées aux bords de l’écran
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-video-testimonials-{{ ai_gen_id }} {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-video-testimonials__container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .ai-video-testimonials__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .ai-video-testimonials__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 15px 0;
+    font-weight: 600;
+  }
+
+  .ai-video-testimonials__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .ai-video-testimonials__carousel-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    padding: 0 60px;
+  }
+
+  .ai-video-testimonials__carousel-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.video_spacing }}px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 10px 0;
+  }
+
+  .ai-video-testimonials__carousel-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-video-testimonials__video-item-{{ ai_gen_id }} {
+    flex: 0 0 auto;
+    width: {{ block.settings.video_width }}px;
+    position: relative;
+  }
+
+  .ai-video-testimonials__video-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: {{ block.settings.video_border_radius }}px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-video-testimonials__video-wrapper-{{ ai_gen_id }}:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-video-testimonials__video-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-video-testimonials__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e8e8e8 100%);
+    position: relative;
+  }
+
+  .ai-video-testimonials__placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+  }
+
+  .ai-video-testimonials__empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+  }
+
+  .ai-video-testimonials__nav-button-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: {{ block.settings.arrow_background }};
+    color: {{ block.settings.arrow_color }};
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-video-testimonials__nav-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.arrow_hover_background }};
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-video-testimonials__nav-button-{{ ai_gen_id }}:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .ai-video-testimonials__nav-button-{{ ai_gen_id }}:disabled:hover {
+    transform: translateY(-50%) scale(1);
+  }
+
+  .ai-video-testimonials__nav-button--prev-{{ ai_gen_id }} {
+    left: 0;
+  }
+
+  .ai-video-testimonials__nav-button--next-{{ ai_gen_id }} {
+    right: 0;
+  }
+
+  .ai-video-testimonials__nav-button-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-video-testimonials-{{ ai_gen_id }} {
+      padding: 40px 0;
+    }
+
+    .ai-video-testimonials__header-{{ ai_gen_id }} {
+      padding: 0 20px;
+      margin-bottom: 30px;
+    }
+
+    .ai-video-testimonials__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-video-testimonials__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-video-testimonials__carousel-wrapper-{{ ai_gen_id }} {
+      padding: 0 20px;
+    }
+
+    .ai-video-testimonials__carousel-{{ ai_gen_id }} {
+      gap: {{ block.settings.video_spacing | times: 0.8 }}px;
+    }
+
+    .ai-video-testimonials__video-item-{{ ai_gen_id }} {
+      width: {{ block.settings.video_width | times: 0.75 }}px;
+    }
+
+    .ai-video-testimonials__nav-button-{{ ai_gen_id }} {
+      display: none;
+    }
+  }
+{% endstyle %}
+
+<video-testimonials-{{ ai_gen_id }}
+  class="ai-video-testimonials-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-video-testimonials__container-{{ ai_gen_id }}">
+    <div class="ai-video-testimonials__header-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-video-testimonials__title-{{ ai_gen_id }}">
+          {{ block.settings.title }}
+        </h2>
+      {% endif %}
+      {% if block.settings.subtitle != blank %}
+        <p class="ai-video-testimonials__subtitle-{{ ai_gen_id }}">
+          {{ block.settings.subtitle }}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="ai-video-testimonials__carousel-wrapper-{{ ai_gen_id }}">
+      <button
+        class="ai-video-testimonials__nav-button-{{ ai_gen_id }} ai-video-testimonials__nav-button--prev-{{ ai_gen_id }}"
+        aria-label="Vidéo précédente"
+        data-direction="prev"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <div class="ai-video-testimonials__carousel-{{ ai_gen_id }}">
+        {% for i in (1..6) %}
+          {% liquid
+            assign video_key = 'video_' | append: i
+            assign video = block.settings[video_key]
+          %}
+
+          <div class="ai-video-testimonials__video-item-{{ ai_gen_id }}">
+            <div class="ai-video-testimonials__video-wrapper-{{ ai_gen_id }}">
+              {% if video != blank %}
+                {{
+                  video
+                  | video_tag:
+                    image_size: '800x',
+                    autoplay: false,
+                    loop: block.settings.loop_videos,
+                    controls: true,
+                    muted: false,
+                    class: 'ai-video-testimonials__video-' | append: ai_gen_id
+                }}
+              {% else %}
+                <div class="ai-video-testimonials__placeholder-{{ ai_gen_id }}">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="23 7 16 12 23 17 23 7"></polygon>
+                    <rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect>
+                  </svg>
+                  <div class="ai-video-testimonials__empty-state-{{ ai_gen_id }}">
+                    Ajouter une vidéo
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <button
+        class="ai-video-testimonials__nav-button-{{ ai_gen_id }} ai-video-testimonials__nav-button--next-{{ ai_gen_id }}"
+        aria-label="Vidéo suivante"
+        data-direction="next"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+</video-testimonials-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class VideoTestimonials{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.carousel = this.querySelector('.ai-video-testimonials__carousel-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-video-testimonials__nav-button--prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-video-testimonials__nav-button--next-{{ ai_gen_id }}');
+        this.videoItems = this.querySelectorAll('.ai-video-testimonials__video-item-{{ ai_gen_id }}');
+      }
+
+      connectedCallback() {
+        this.setupNavigation();
+        this.updateButtonStates();
+        this.carousel.addEventListener('scroll', () => this.updateButtonStates());
+      }
+
+      setupNavigation() {
+        this.prevButton.addEventListener('click', () => this.scroll('prev'));
+        this.nextButton.addEventListener('click', () => this.scroll('next'));
+      }
+
+      scroll(direction) {
+        const scrollAmount = this.videoItems[0].offsetWidth + {{ block.settings.video_spacing }};
+        const currentScroll = this.carousel.scrollLeft;
+        
+        if (direction === 'next') {
+          this.carousel.scrollLeft = currentScroll + scrollAmount;
+        } else {
+          this.carousel.scrollLeft = currentScroll - scrollAmount;
+        }
+      }
+
+      updateButtonStates() {
+        const maxScroll = this.carousel.scrollWidth - this.carousel.clientWidth;
+        const currentScroll = this.carousel.scrollLeft;
+
+        this.prevButton.disabled = currentScroll <= 0;
+        this.nextButton.disabled = currentScroll >= maxScroll - 1;
+      }
+    }
+
+    customElements.define('video-testimonials-{{ ai_gen_id }}', VideoTestimonials{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Témoignages vidéo",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Titre",
+      "default": "Ce sont elles qui en parlent le mieux"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "+ 1418 femmes satisfaites"
+    },
+    {
+      "type": "header",
+      "content": "Vidéos"
+    },
+    {
+      "type": "video",
+      "id": "video_1",
+      "label": "Vidéo 1"
+    },
+    {
+      "type": "video",
+      "id": "video_2",
+      "label": "Vidéo 2"
+    },
+    {
+      "type": "video",
+      "id": "video_3",
+      "label": "Vidéo 3"
+    },
+    {
+      "type": "video",
+      "id": "video_4",
+      "label": "Vidéo 4"
+    },
+    {
+      "type": "video",
+      "id": "video_5",
+      "label": "Vidéo 5"
+    },
+    {
+      "type": "video",
+      "id": "video_6",
+      "label": "Vidéo 6"
+    },
+    {
+      "type": "checkbox",
+      "id": "loop_videos",
+      "label": "Lecture en boucle",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Style des vidéos"
+    },
+    {
+      "type": "range",
+      "id": "video_width",
+      "label": "Largeur des vidéos",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "default": 280
+    },
+    {
+      "type": "range",
+      "id": "video_spacing",
+      "label": "Espacement entre vidéos",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "video_border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur du sous-titre",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "arrow_background",
+      "label": "Fond des flèches",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Couleur des flèches",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "arrow_hover_background",
+      "label": "Fond des flèches au survol",
+      "default": "#f0c417"
+    },
+    {
+      "type": "header",
+      "content": "Typographie"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre",
+      "min": 14,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    }
+  ],
+  "presets": [
+    {
+      "name": "Témoignages vidéo"
+    }
+  ]
+}
 {% endschema %}
