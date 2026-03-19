@@ -450,6 +450,48 @@
         "overlay_opacity": 30
       }
     },
+    "1773944189ad8173e5": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_13f1c4d_V7JLmJ": {
+          "type": "ai_gen_block_13f1c4d",
+          "settings": {
+            "heading": "Pourquoi choisir notre produit ?",
+            "heading_size": 32,
+            "heading_color": "#1a1a1a",
+            "column_1_header": "Caractéristiques",
+            "column_2_header": "Notre produit",
+            "column_3_header": "Bouillotte classique",
+            "row_1_feature": "Utilisation mains libres",
+            "row_1_col_2": "check",
+            "row_1_col_3": "cross",
+            "row_2_feature": "Chaleur continue et ciblée",
+            "row_2_col_2": "check",
+            "row_2_col_3": "cross",
+            "row_3_feature": "Rechargeable & durable",
+            "row_3_col_2": "check",
+            "row_3_col_3": "cross",
+            "row_4_feature": "Idéale en déplacement",
+            "row_4_col_2": "check",
+            "row_4_col_3": "cross",
+            "table_background": "#fef5f8",
+            "header_background": "#ffc9dd",
+            "header_text_color": "#1a1a1a",
+            "text_color": "#1a1a1a",
+            "border_color": "#ffd9e8",
+            "check_color": "#ff69b4",
+            "cross_color": "#ff4d6d",
+            "table_border_radius": 16,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_13f1c4d_V7JLmJ"
+      ],
+      "settings": {}
+    },
     "impact_text_Qarpb7": {
       "type": "impact-text",
       "name": "Impact text",
@@ -692,48 +734,6 @@
         "heading_color": "",
         "heading_gradient": ""
       }
-    },
-    "1773944189ad8173e5": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_13f1c4d_V7JLmJ": {
-          "type": "ai_gen_block_13f1c4d",
-          "settings": {
-            "heading": "Pourquoi choisir notre produit ?",
-            "heading_size": 32,
-            "heading_color": "#1a1a1a",
-            "column_1_header": "Caractéristiques",
-            "column_2_header": "Notre produit",
-            "column_3_header": "Bouillotte classique",
-            "row_1_feature": "Utilisation mains libres",
-            "row_1_col_2": "check",
-            "row_1_col_3": "cross",
-            "row_2_feature": "Chaleur continue et ciblée",
-            "row_2_col_2": "check",
-            "row_2_col_3": "cross",
-            "row_3_feature": "Rechargeable & durable",
-            "row_3_col_2": "check",
-            "row_3_col_3": "cross",
-            "row_4_feature": "Idéale en déplacement",
-            "row_4_col_2": "check",
-            "row_4_col_3": "cross",
-            "table_background": "#fef5f8",
-            "header_background": "#ffc9dd",
-            "header_text_color": "#1a1a1a",
-            "text_color": "#1a1a1a",
-            "border_color": "#ffd9e8",
-            "check_color": "#ff69b4",
-            "cross_color": "#ff4d6d",
-            "table_border_radius": 16,
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_13f1c4d_V7JLmJ"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -746,13 +746,13 @@
     "image_with_text_overlay_3UTKGE",
     "scrolling_text_ybyVAw",
     "video_Dh8V9N",
+    "1773944189ad8173e5",
     "impact_text_Qarpb7",
     "multiple_images_with_text_7qbCNc",
     "1773841534ee15a2be",
     "impact_text_DFLAjG",
     "faq",
     "177384083016474427",
-    "blog_posts_e8VnV9",
-    "1773944189ad8173e5"
+    "blog_posts_e8VnV9"
   ]
 }
