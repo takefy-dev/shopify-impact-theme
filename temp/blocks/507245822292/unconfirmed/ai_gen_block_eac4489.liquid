@@ -1,6 +1,402 @@
+{% doc %}
+  @prompt
+    Créer une section avec un titre modifiable et un sous-titre modifiable.
+    
+    Le titre doit être centré et pouvoir être modifié facilement (taille, texte).
+    
+    Ajouter en dessous une galerie de 7 photos.
+    
+    Les photos doivent :
+    - être de taille moyenne
+    - avoir des coins arrondis
+    - être bien espacées entre elles
+    - avoir un style lifestyle (utilisation réelle du produit)
+    
+    Disposition :
+    - sur ordinateur : les photos sont alignées horizontalement avec un scroll (carousel)
+    - afficher plusieurs photos visibles à l’écran (pas une seule grande image)
+    
+    Responsive mobile :
+    - affichage en scroll horizontal
+    - photos bien espacées
+    - ne pas être collées aux bords de l’écran
+    
+    IMPORTANT :
+    - ajouter du padding à gauche et à droite pour que le contenu respire
+    - espacement équilibré entre chaque photo
+    
+    Style :
+    - design moderne, esthétique et premium
+    - adapté à une marque beauté
+    - rendu propre et inspirant (comme Instagram)
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-lifestyle-gallery-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 60px 5%;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-lifestyle-gallery__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .ai-lifestyle-gallery__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 12px 0;
+    font-weight: 600;
+  }
+
+  .ai-lifestyle-gallery__subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    font-weight: 400;
+  }
+
+  .ai-lifestyle-gallery__carousel-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+
+  .ai-lifestyle-gallery__carousel-{{ ai_gen_id }} {
+    display: flex;
+    gap: {{ block.settings.image_spacing }}px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 20px;
+  }
+
+  .ai-lifestyle-gallery__carousel-{{ ai_gen_id }}::-webkit-scrollbar {
+    display: none;
+  }
+
+  .ai-lifestyle-gallery__image-wrapper-{{ ai_gen_id }} {
+    flex: 0 0 auto;
+    width: {{ block.settings.image_width }}px;
+    height: {{ block.settings.image_height }}px;
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+    background-color: #f4f4f4;
+    position: relative;
+  }
+
+  .ai-lifestyle-gallery__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+
+  .ai-lifestyle-gallery__image-wrapper-{{ ai_gen_id }}:hover .ai-lifestyle-gallery__image-{{ ai_gen_id }} {
+    transform: scale(1.05);
+  }
+
+  .ai-lifestyle-gallery__placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-lifestyle-gallery__placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-lifestyle-gallery-{{ ai_gen_id }} {
+      padding: 40px 4%;
+    }
+
+    .ai-lifestyle-gallery__header-{{ ai_gen_id }} {
+      margin-bottom: 30px;
+    }
+
+    .ai-lifestyle-gallery__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.7 }}px;
+    }
+
+    .ai-lifestyle-gallery__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.8 }}px;
+    }
+
+    .ai-lifestyle-gallery__carousel-wrapper-{{ ai_gen_id }} {
+      padding: 0 10px;
+    }
+
+    .ai-lifestyle-gallery__image-wrapper-{{ ai_gen_id }} {
+      width: {{ block.settings.image_width | times: 0.7 }}px;
+      height: {{ block.settings.image_height | times: 0.7 }}px;
+    }
+
+    .ai-lifestyle-gallery__carousel-{{ ai_gen_id }} {
+      gap: {{ block.settings.image_spacing | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}
+
+<lifestyle-gallery-{{ ai_gen_id }} class="ai-lifestyle-gallery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-lifestyle-gallery__header-{{ ai_gen_id }}">
+    {% if block.settings.title != blank %}
+      <h2 class="ai-lifestyle-gallery__title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+    {% endif %}
+    {% if block.settings.subtitle != blank %}
+      <p class="ai-lifestyle-gallery__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+    {% endif %}
+  </div>
+
+  <div class="ai-lifestyle-gallery__carousel-wrapper-{{ ai_gen_id }}">
+    <div class="ai-lifestyle-gallery__carousel-{{ ai_gen_id }}">
+      {% for i in (1..7) %}
+        {% assign image_key = 'image_' | append: i %}
+        {% assign image = block.settings[image_key] %}
+        
+        <div class="ai-lifestyle-gallery__image-wrapper-{{ ai_gen_id }}">
+          {% if image != blank %}
+            <img
+              src="{{ image | image_url: width: 800 }}"
+              alt="{{ image.alt | escape }}"
+              loading="lazy"
+              width="{{ block.settings.image_width }}"
+              height="{{ block.settings.image_height }}"
+              class="ai-lifestyle-gallery__image-{{ ai_gen_id }}"
+            >
+          {% else %}
+            <div class="ai-lifestyle-gallery__placeholder-{{ ai_gen_id }}">
+              {{ 'lifestyle-1' | placeholder_svg_tag }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</lifestyle-gallery-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class LifestyleGallery{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.carousel = this.querySelector('.ai-lifestyle-gallery__carousel-{{ ai_gen_id }}');
+        this.setupTouchScroll();
+      }
+
+      setupTouchScroll() {
+        if (!this.carousel) return;
+
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        this.carousel.addEventListener('mousedown', (e) => {
+          isDown = true;
+          this.carousel.style.cursor = 'grabbing';
+          startX = e.pageX - this.carousel.offsetLeft;
+          scrollLeft = this.carousel.scrollLeft;
+        });
+
+        this.carousel.addEventListener('mouseleave', () => {
+          isDown = false;
+          this.carousel.style.cursor = 'grab';
+        });
+
+        this.carousel.addEventListener('mouseup', () => {
+          isDown = false;
+          this.carousel.style.cursor = 'grab';
+        });
+
+        this.carousel.addEventListener('mousemove', (e) => {
+          if (!isDown) return;
+          e.preventDefault();
+          const x = e.pageX - this.carousel.offsetLeft;
+          const walk = (x - startX) * 2;
+          this.carousel.scrollLeft = scrollLeft - walk;
+        });
+
+        this.carousel.style.cursor = 'grab';
+      }
+    }
+
+    customElements.define('lifestyle-gallery-{{ ai_gen_id }}', LifestyleGallery{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Galerie lifestyle",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Titre et sous-titre"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Titre",
+      "default": "Notre univers"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Découvrez nos produits en situation"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur du sous-titre",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Image 7"
+    },
+    {
+      "type": "header",
+      "content": "Style des images"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Largeur des images",
+      "min": 200,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "range",
+      "id": "image_height",
+      "label": "Hauteur des images",
+      "min": 200,
+      "max": 500,
+      "step": 20,
+      "unit": "px",
+      "default": 380
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "label": "Espacement entre les images",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Largeur sur ordinateur",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Galerie lifestyle"
+    }
+  ]
+}
 {% endschema %}
