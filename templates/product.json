@@ -231,6 +231,35 @@
       ],
       "settings": {}
     },
+    "177394009595a8bf00": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_7ec939d_a8rgkP": {
+          "type": "ai_gen_block_7ec939d",
+          "settings": {
+            "title": "CE SONT ELLES QUI EN PARLENT LE MIEUX",
+            "subtitle": "+ 1418 femmes satisfaites",
+            "desktop_width_percent": 100,
+            "video_1": "shopify://files/videos/3d45b7698f6d4da1b9ca7a1cc07a93ee.HD-1080p-4.8Mbps-55015792.mp4",
+            "video_2": "shopify://files/videos/IMG_7996.mov",
+            "video_3": "shopify://files/videos/IMG_8857_87009003-e8da-4780-971b-a72ba2ed6410.mov",
+            "video_width": 280,
+            "video_spacing": 25,
+            "video_border_radius": 24,
+            "mobile_layout": "scroll",
+            "title_size": 36,
+            "title_color": "#1a1a1a",
+            "subtitle_size": 16,
+            "subtitle_color": "#666666"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_7ec939d_a8rgkP"
+      ],
+      "settings": {}
+    },
     "17738456821a0b5b6d": {
       "type": "_blocks",
       "blocks": {
@@ -338,35 +367,6 @@
         "background_gradient": "",
         "text_color": ""
       }
-    },
-    "177394009595a8bf00": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_7ec939d_a8rgkP": {
-          "type": "ai_gen_block_7ec939d",
-          "settings": {
-            "title": "CE SONT ELLES QUI EN PARLENT LE MIEUX",
-            "subtitle": "+ 1418 femmes satisfaites",
-            "desktop_width_percent": 100,
-            "video_1": "shopify://files/videos/3d45b7698f6d4da1b9ca7a1cc07a93ee.HD-1080p-4.8Mbps-55015792.mp4",
-            "video_2": "shopify://files/videos/IMG_7996.mov",
-            "video_3": "shopify://files/videos/IMG_8857_87009003-e8da-4780-971b-a72ba2ed6410.mov",
-            "video_width": 280,
-            "video_spacing": 25,
-            "video_border_radius": 24,
-            "mobile_layout": "scroll",
-            "title_size": 36,
-            "title_color": "#1a1a1a",
-            "subtitle_size": 16,
-            "subtitle_color": "#666666"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_7ec939d_a8rgkP"
-      ],
-      "settings": {}
     },
     "multiple_images_with_text_acJcVQ": {
       "type": "multiple-images-with-text",
@@ -627,6 +627,39 @@
     "177393285333f388f0": {
       "type": "_blocks",
       "settings": {}
+    },
+    "17739407062e0481a8": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_0d677f4_wgP3JU": {
+          "type": "ai_gen_block_0d677f4",
+          "settings": {
+            "title": "Rejoignez des milliers de femmes soulagées !",
+            "title_size": 32,
+            "title_color": "#1a1a1a",
+            "subtitle": "Chaque jour, elles choisissent notre ceinture pour vivre leurs règles autrement sans souffrir.",
+            "subtitle_size": 16,
+            "subtitle_color": "#666666",
+            "image_1": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.22.02.png",
+            "image_2": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.22.41.png",
+            "image_3": "shopify://shop_images/IMG_6819.webp",
+            "image_4": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.23.43.png",
+            "image_5": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.23.10.png",
+            "image_6": "shopify://shop_images/Capture_d_ecran_2026-03-19_a_18.23.56.png",
+            "image_7": "shopify://shop_images/9_b6774dd7-db95-468b-8638-3ee556c608aa.webp",
+            "image_width": 280,
+            "image_height": 360,
+            "border_radius": 20,
+            "image_spacing": 20,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_0d677f4_wgP3JU"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -642,6 +675,7 @@
     "multiple_images_with_text_bdyGKJ",
     "rich_text_QUfbUt",
     "before_after_image_fmPB8E",
-    "177393285333f388f0"
+    "177393285333f388f0",
+    "17739407062e0481a8"
   ]
 }
