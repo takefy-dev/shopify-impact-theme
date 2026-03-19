@@ -1,6 +1,294 @@
+{% doc %}
+  @prompt
+    Créer une petite section de type bande d’information pour afficher un message d’urgence.
+    
+    Contenu :
+    - un court texte incitant à l’achat (ex : stock limité ou forte demande)
+    
+    Design :
+    - texte avec une icône au début (ex : 🔴 qui clignote)
+    - texte bien visible
+    - couleur du texte rouge ou foncé pour attirer l’attention
+    - fond très léger (gris clair ou rose très clair)
+    
+    Disposition :
+    - bande fine (pas épaisse)
+    - texte centré horizontalement
+    
+    IMPORTANT :
+    - ajouter du padding pour que le texte ne soit pas collé aux bords
+    - espacement propre et lisible
+    
+    Responsive mobile :
+    - texte bien lisible
+    - pas collé aux bords
+    - taille adaptée mobile
+    
+    Style :
+    - moderne, minimaliste
+    - adapté à une marque beauté
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-urgency-banner-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.vertical_padding }}px {{ block.settings.horizontal_padding }}px;
+  }
+
+  .ai-urgency-banner__content-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-urgency-banner__icon-{{ ai_gen_id }} {
+    font-size: {{ block.settings.icon_size }}px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  {% if block.settings.enable_blink %}
+    @keyframes ai-urgency-blink-{{ ai_gen_id }} {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .ai-urgency-banner__icon-{{ ai_gen_id }} {
+      animation: ai-urgency-blink-{{ ai_gen_id }} {{ block.settings.blink_speed }}s ease-in-out infinite;
+    }
+  {% endif %}
+
+  .ai-urgency-banner__text-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    font-weight: {{ block.settings.text_weight }};
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-urgency-banner-{{ ai_gen_id }} {
+      padding: {{ block.settings.vertical_padding_mobile }}px {{ block.settings.horizontal_padding_mobile }}px;
+    }
+
+    .ai-urgency-banner__text-{{ ai_gen_id }} {
+      font-size: {{ block.settings.text_size_mobile }}px;
+    }
+
+    .ai-urgency-banner__icon-{{ ai_gen_id }} {
+      font-size: {{ block.settings.icon_size_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<urgency-banner-{{ ai_gen_id }} class="ai-urgency-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-urgency-banner__content-{{ ai_gen_id }}">
+    {% if block.settings.show_icon %}
+      <span class="ai-urgency-banner__icon-{{ ai_gen_id }}">{{ block.settings.icon }}</span>
+    {% endif %}
+    {% if block.settings.message != blank %}
+      <p class="ai-urgency-banner__text-{{ ai_gen_id }}">{{ block.settings.message }}</p>
+    {% endif %}
+  </div>
+</urgency-banner-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class UrgencyBanner{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('urgency-banner-{{ ai_gen_id }}', UrgencyBanner{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Bande d'urgence",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "message",
+      "label": "Message",
+      "default": "Stock limité - Commandez maintenant avant rupture"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_icon",
+      "label": "Afficher l'icône",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "icon",
+      "label": "Icône",
+      "default": "🔴"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_blink",
+      "label": "Activer le clignotement",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "blink_speed",
+      "label": "Vitesse de clignotement",
+      "min": 0.5,
+      "max": 3,
+      "step": 0.5,
+      "unit": "s",
+      "default": 1.5
+    },
+    {
+      "type": "header",
+      "content": "Couleurs"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Fond",
+      "default": "#fff5f5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Texte",
+      "default": "#8b0000"
+    },
+    {
+      "type": "header",
+      "content": "Typographie"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "label": "Taille du texte (desktop)",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "text_size_mobile",
+      "label": "Taille du texte (mobile)",
+      "min": 11,
+      "max": 16,
+      "step": 1,
+      "unit": "px",
+      "default": 13
+    },
+    {
+      "type": "select",
+      "id": "text_weight",
+      "label": "Épaisseur du texte",
+      "options": [
+        {
+          "value": "400",
+          "label": "Normal"
+        },
+        {
+          "value": "500",
+          "label": "Moyen"
+        },
+        {
+          "value": "600",
+          "label": "Semi-gras"
+        },
+        {
+          "value": "700",
+          "label": "Gras"
+        }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "label": "Taille de l'icône (desktop)",
+      "min": 12,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "icon_size_mobile",
+      "label": "Taille de l'icône (mobile)",
+      "min": 10,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Espacement desktop"
+    },
+    {
+      "type": "range",
+      "id": "vertical_padding",
+      "label": "Espacement vertical",
+      "min": 8,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding",
+      "label": "Espacement horizontal",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Espacement mobile"
+    },
+    {
+      "type": "range",
+      "id": "vertical_padding_mobile",
+      "label": "Espacement vertical",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding_mobile",
+      "label": "Espacement horizontal",
+      "min": 10,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    }
+  ],
+  "presets": [
+    {
+      "name": "Bande d'urgence"
+    }
+  ]
+}
 {% endschema %}
