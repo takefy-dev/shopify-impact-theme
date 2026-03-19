@@ -1,6 +1,439 @@
+{% doc %}
+  @prompt
+    Créer une section avec une image et du texte.
+    
+    Le texte doit contenir :
+    - une note avec 5 étoiles
+    - une phrase courte (preuve sociale)
+    - un titre modifiable (taille modifiable)
+    - un sous-titre
+    - un bouton
+    - une petite phrase en bas
+    
+    Disposition :
+    
+    Sur ordinateur :
+    - texte à gauche
+    - image à droite
+    - les deux bien alignés horizontalement
+    - image avec coins arrondis
+    - texte centré verticalement
+    
+    Sur mobile :
+    - l’image doit être en haut
+    - le texte en dessous
+    - le texte doit être centré
+    - ajouter de l’espace entre les éléments
+    
+    IMPORTANT :
+    - ajouter du padding à gauche et à droite pour que le texte ne soit pas collé aux bords
+    - espacement équilibré entre chaque élément
+    - bouton bien visible et centré
+    
+    Style :
+    - design moderne, doux et premium
+    - couleurs adaptées à une marque beauté
+    - rendu propre et lisible
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-text-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 40px 20px;
+    background-color: {{ block.settings.background_color }};
+  }
+
+  .ai-image-text-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .ai-image-text-content-{{ ai_gen_id }} {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .ai-image-text-rating-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .ai-image-text-star-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-image-text-social-proof-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.social_proof_color }};
+    font-style: italic;
+    margin: 0;
+  }
+
+  .ai-image-text-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  .ai-image-text-subtitle-{{ ai_gen_id }} {
+    font-size: 16px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .ai-image-text-button-{{ ai_gen_id }} {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 32px;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+  }
+
+  .ai-image-text-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_background }};
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-image-text-bottom-text-{{ ai_gen_id }} {
+    font-size: 13px;
+    color: {{ block.settings.bottom_text_color }};
+    margin: 0;
+  }
+
+  .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    position: relative;
+  }
+
+  .ai-image-text-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #f5f5f5;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-image-text-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .ai-image-text-container-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .ai-image-text-content-{{ ai_gen_id }} {
+      order: 2;
+      text-align: center;
+      align-items: center;
+      padding: 0 10px;
+    }
+
+    .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+      order: 1;
+      width: 100%;
+    }
+
+    .ai-image-text-button-{{ ai_gen_id }} {
+      align-self: center;
+    }
+
+    .ai-image-text-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+  }
+{% endstyle %}
+
+<ai-image-text-section-{{ ai_gen_id }} class="ai-image-text-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-image-text-container-{{ ai_gen_id }}">
+    <div class="ai-image-text-content-{{ ai_gen_id }}">
+      {% if block.settings.show_rating %}
+        <div class="ai-image-text-rating-{{ ai_gen_id }}">
+          {% for i in (1..5) %}
+            <svg class="ai-image-text-star-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if block.settings.social_proof != blank %}
+        <p class="ai-image-text-social-proof-{{ ai_gen_id }}">{{ block.settings.social_proof }}</p>
+      {% endif %}
+
+      {% if block.settings.title != blank %}
+        <h2 class="ai-image-text-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+
+      {% if block.settings.subtitle != blank %}
+        <div class="ai-image-text-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+      {% endif %}
+
+      {% if block.settings.button_text != blank %}
+        <a href="{{ block.settings.button_link }}" class="ai-image-text-button-{{ ai_gen_id }}">
+          {{ block.settings.button_text }}
+        </a>
+      {% endif %}
+
+      {% if block.settings.bottom_text != blank %}
+        <p class="ai-image-text-bottom-text-{{ ai_gen_id }}">{{ block.settings.bottom_text }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-text-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 800 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          class="ai-image-text-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+        >
+      {% else %}
+        <div class="ai-image-text-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-image-text-empty-state-{{ ai_gen_id }}">
+            Ajoutez une image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</ai-image-text-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiImageTextSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('ai-image-text-section-{{ ai_gen_id }}', AiImageTextSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image et texte",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Coins arrondis",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Note"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "label": "Afficher les étoiles",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Couleur des étoiles",
+      "default": "#FFD700"
+    },
+    {
+      "type": "header",
+      "content": "Preuve sociale"
+    },
+    {
+      "type": "text",
+      "id": "social_proof",
+      "label": "Texte de preuve sociale",
+      "default": "Plus de 10 000 clientes satisfaites"
+    },
+    {
+      "type": "color",
+      "id": "social_proof_color",
+      "label": "Couleur",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Titre"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titre",
+      "default": "Révélez votre beauté naturelle"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Sous-titre"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Des soins naturels et efficaces pour sublimer votre peau au quotidien"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Bouton"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Texte du bouton",
+      "default": "Découvrir"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Couleur de fond",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Couleur du texte",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_background",
+      "label": "Couleur au survol",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "label": "Coins arrondis",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Texte du bas"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Texte",
+      "default": "Livraison gratuite dès 50€"
+    },
+    {
+      "type": "color",
+      "id": "bottom_text_color",
+      "label": "Couleur",
+      "default": "#999999"
+    },
+    {
+      "type": "header",
+      "content": "Arrière-plan"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#faf8f6"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image et texte"
+    }
+  ]
+}
 {% endschema %}
