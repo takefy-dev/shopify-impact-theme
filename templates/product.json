@@ -597,34 +597,6 @@
     },
     "177393285333f388f0": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_bdea588_UXdxVy": {
-          "type": "ai_gen_block_bdea588",
-          "settings": {
-            "title": "Ce sont elles qui en parlent le mieux",
-            "subtitle": "+ 1418 femmes satisfaites",
-            "video_1": "shopify://files/videos/3d45b7698f6d4da1b9ca7a1cc07a93ee.HD-1080p-4.8Mbps-55015792.mp4",
-            "video_2": "shopify://files/videos/IMG_7996.mov",
-            "video_3": "shopify://files/videos/IMG_8857.mov",
-            "loop_videos": false,
-            "video_width": 280,
-            "video_spacing": 20,
-            "video_border_radius": 16,
-            "background_color": "#ffffff",
-            "title_color": "#1a1a1a",
-            "subtitle_color": "#666666",
-            "arrow_background": "#ffffff",
-            "arrow_color": "#1a1a1a",
-            "arrow_hover_background": "#f0c417",
-            "title_size": 36,
-            "subtitle_size": 18
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_bdea588_UXdxVy"
-      ],
       "settings": {}
     }
   },
