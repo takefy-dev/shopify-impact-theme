@@ -1,6 +1,318 @@
+{% doc %}
+  @prompt
+    Créer une section avec une image à gauche et du texte à droite sur ordinateur.
+    
+    Le texte doit contenir :
+    - un titre
+    - un sous-titre
+    - un paragraphe
+    
+    Le texte doit être bien aligné, lisible et centré verticalement.
+    
+    IMPORTANT :
+    - Ajouter de l’espace autour du texte (padding à gauche et à droite d’au moins 20 à 30px)
+    - Le texte ne doit jamais être collé aux bords de l’écran
+    
+    Image :
+    - L’image doit être légèrement plus petite que le texte
+    - Coins légèrement arrondis
+    - Aspect propre et esthétique
+    
+    Responsive mobile :
+    - Sur téléphone, l’image doit être en haut et le texte en dessous
+    - Le texte doit rester bien espacé des bords (padding mobile aussi)
+    - Le contenu doit être centré et facile à lire
+    
+    Style :
+    - Design moderne, minimaliste et premium
+    - Adapté à une marque beauté
+    - Espacement équilibré entre les éléments
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-text-section-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-image-text-container-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 40px;
+    align-items: center;
+    padding: 60px 0;
+  }
+
+  .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    position: relative;
+  }
+
+  .ai-image-text-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-image-text-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #999;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-image-text-content-{{ ai_gen_id }} {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.text_spacing }}px;
+  }
+
+  .ai-image-text-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    line-height: 1.2;
+    margin: 0;
+    color: {{ block.settings.title_color }};
+    font-weight: 600;
+  }
+
+  .ai-image-text-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    line-height: 1.4;
+    margin: 0;
+    color: {{ block.settings.subtitle_color }};
+    font-weight: 500;
+  }
+
+  .ai-image-text-paragraph-{{ ai_gen_id }} {
+    font-size: {{ block.settings.paragraph_size }}px;
+    line-height: 1.6;
+    margin: 0;
+    color: {{ block.settings.paragraph_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-text-container-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: 30px;
+      padding: 40px 0;
+    }
+
+    .ai-image-text-content-{{ ai_gen_id }} {
+      padding: 0 20px;
+      order: 2;
+    }
+
+    .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+      order: 1;
+      padding: 0 20px;
+    }
+
+    .ai-image-text-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-image-text-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-image-text-paragraph-{{ ai_gen_id }} {
+      font-size: {{ block.settings.paragraph_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-image-text-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-image-text-container-{{ ai_gen_id }}">
+    <div class="ai-image-text-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1000 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-image-text-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-image-text-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-image-text-empty-state-{{ ai_gen_id }}">
+            Ajouter une image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-text-content-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-image-text-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+
+      {% if block.settings.subtitle != blank %}
+        <h3 class="ai-image-text-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</h3>
+      {% endif %}
+
+      {% if block.settings.paragraph != blank %}
+        <div class="ai-image-text-paragraph-{{ ai_gen_id }}">{{ block.settings.paragraph }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image et texte",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Titre",
+      "default": "<p>Votre titre ici</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "<p>Votre sous-titre élégant</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraphe",
+      "default": "<p>Découvrez notre collection exclusive de produits beauté premium, conçus pour sublimer votre routine quotidienne avec élégance et efficacité.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Style du texte"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur du sous-titre",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "paragraph_size",
+      "label": "Taille du paragraphe",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "paragraph_color",
+      "label": "Couleur du paragraphe",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "label": "Espacement entre les textes",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Mise en page"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Largeur sur ordinateur",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image et texte"
+    }
+  ]
+}
 {% endschema %}
