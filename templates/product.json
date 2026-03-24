@@ -87,6 +87,12 @@
             "payment_button_text_color": ""
           }
         },
+        "gsc_countdown_timer_countdown_9QQ6pL": {
+          "type": "shopify://apps/gsc-countdown-timer/blocks/countdown/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
+          "settings": {
+            "widget_id": ""
+          }
+        },
         "conversion_bear_trust_badges_widget_gyEmDc": {
           "type": "shopify://apps/conversion-bear-trust-badges/blocks/widget/163a9b59-0ec2-4cb7-bf5c-31408b4a9420",
           "settings": {}
@@ -162,6 +168,7 @@
         "quantity_selector",
         "offer_qjKNEf",
         "buy_buttons",
+        "gsc_countdown_timer_countdown_9QQ6pL",
         "conversion_bear_trust_badges_widget_gyEmDc",
         "offer_YFp9j7",
         "collapsible_text_kthjFj",
