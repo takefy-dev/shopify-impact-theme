@@ -551,36 +551,6 @@
         "ai_gen_block_8d73235_ffR3DF"
       ],
       "settings": {}
-    },
-    "multiple_images_with_text_eVH7fx": {
-      "type": "multiple-images-with-text",
-      "blocks": {
-        "item_x9kFk3": {
-          "type": "item",
-          "settings": {
-            "image_rotation_degrees": -2,
-            "subheading": "",
-            "title": "Heading 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-            "button_url": "",
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_x9kFk3"
-      ],
-      "name": "Multiple images with text",
-      "settings": {
-        "full_width": true,
-        "images_layout": "stacked",
-        "collage_images_alignment": "middle",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
-      }
     }
   },
   "order": [
@@ -590,14 +560,13 @@
     "1749041382c0470b00",
     "177394505812eb6a75",
     "multiple_images_with_text_deXpWP",
+    "17744320597e7a0cdc",
     "1773944189ad8173e5",
     "impact_text_Qarpb7",
     "1773841534ee15a2be",
     "impact_text_DFLAjG",
     "faq",
     "177384083016474427",
-    "blog_posts_e8VnV9",
-    "17744320597e7a0cdc",
-    "multiple_images_with_text_eVH7fx"
+    "blog_posts_e8VnV9"
   ]
 }
