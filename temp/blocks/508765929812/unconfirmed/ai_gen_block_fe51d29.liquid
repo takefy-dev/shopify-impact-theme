@@ -1,6 +1,503 @@
+{% doc %}
+  @prompt
+    Créer une section avec une image à gauche et du texte à droite sur ordinateur.
+    
+    Le texte doit contenir :
+    - un titre
+    - un sous-titre
+    - un paragraphe
+    
+    Le texte doit être bien aligné, lisible et centré verticalement.
+    
+    IMPORTANT :
+    - Ajouter de l’espace autour du texte (padding à gauche et à droite d’au moins 20 à 30px)
+    - Le texte ne doit jamais être collé aux bords de l’écran
+    
+    Image :
+    - L’image doit être légèrement plus petite que le texte
+    - Coins légèrement arrondis
+    - Aspect propre et esthétique
+    
+    Responsive mobile :
+    - Sur téléphone, l’image doit être en haut et le texte en dessous
+    - Le texte doit rester bien espacé des bords (padding mobile aussi)
+    - Le contenu doit être centré et facile à lire
+    
+    Style :
+    - Design moderne, minimaliste et premium
+    - Adapté à une marque beauté
+    - Espacement équilibré entre les éléments,, le texte sur telephone doit être centrer a l'image
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-text-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.section_padding_mobile }}px 0;
+  }
+
+  .ai-image-text-container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.gap_desktop }}px;
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ block.settings.horizontal_padding_mobile }}px;
+  }
+
+  .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+    flex: 0 0 {{ block.settings.image_width }}%;
+    max-width: {{ block.settings.image_width }}%;
+  }
+
+  .ai-image-text-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    object-fit: cover;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-image-text-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+  }
+
+  .ai-image-text-content-{{ ai_gen_id }} {
+    flex: 1;
+    padding: 0 {{ block.settings.text_padding_horizontal }}px;
+    display: flex;
+    flex-direction: column;
+    gap: {{ block.settings.text_spacing }}px;
+  }
+
+  .ai-image-text-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: {{ block.settings.title_weight }};
+    color: {{ block.settings.title_color }};
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .ai-image-text-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    font-weight: {{ block.settings.subtitle_weight }};
+    color: {{ block.settings.subtitle_color }};
+    margin: 0;
+    line-height: 1.4;
+  }
+
+  .ai-image-text-paragraph-{{ ai_gen_id }} {
+    font-size: {{ block.settings.paragraph_size }}px;
+    color: {{ block.settings.paragraph_color }};
+    margin: 0;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-image-text-section-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding_desktop }}px 0;
+    }
+
+    .ai-image-text-container-{{ ai_gen_id }} {
+      padding: 0 {{ block.settings.horizontal_padding_desktop }}px;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-text-container-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: {{ block.settings.gap_mobile }}px;
+    }
+
+    .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    .ai-image-text-content-{{ ai_gen_id }} {
+      text-align: center;
+      padding: 0 {{ block.settings.text_padding_horizontal_mobile }}px;
+    }
+
+    .ai-image-text-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_mobile }}px;
+    }
+
+    .ai-image-text-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_mobile }}px;
+    }
+
+    .ai-image-text-paragraph-{{ ai_gen_id }} {
+      font-size: {{ block.settings.paragraph_size_mobile }}px;
+    }
+  }
+{% endstyle %}
+
+<ai-image-text-{{ ai_gen_id }} class="ai-image-text-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-image-text-container-{{ ai_gen_id }}">
+    <div class="ai-image-text-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1200 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          class="ai-image-text-image-{{ ai_gen_id }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+        >
+      {% else %}
+        <div class="ai-image-text-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-image-text-empty-state-{{ ai_gen_id }}">
+            Ajoutez une image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-text-content-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-image-text-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+
+      {% if block.settings.subtitle != blank %}
+        <h3 class="ai-image-text-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</h3>
+      {% endif %}
+
+      {% if block.settings.paragraph != blank %}
+        <div class="ai-image-text-paragraph-{{ ai_gen_id }}">{{ block.settings.paragraph }}</div>
+      {% endif %}
+    </div>
+  </div>
+</ai-image-text-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class AiImageText{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+      }
+    }
+
+    customElements.define('ai-image-text-{{ ai_gen_id }}', AiImageText{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image et texte",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_width",
+      "label": "Largeur de l'image",
+      "min": 30,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Titre",
+      "default": "<p>Votre titre ici</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "<p>Votre sous-titre élégant</p>"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraphe",
+      "default": "<p>Découvrez notre collection premium de produits beauté conçus pour sublimer votre peau. Des formules naturelles et efficaces pour un résultat visible.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Style du titre"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille (desktop)",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Taille (mobile)",
+      "min": 18,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "select",
+      "id": "title_weight",
+      "label": "Épaisseur",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Style du sous-titre"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille (desktop)",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Taille (mobile)",
+      "min": 14,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "select",
+      "id": "subtitle_weight",
+      "label": "Épaisseur",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" }
+      ],
+      "default": "500"
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Style du paragraphe"
+    },
+    {
+      "type": "range",
+      "id": "paragraph_size",
+      "label": "Taille (desktop)",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "paragraph_size_mobile",
+      "label": "Taille (mobile)",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "paragraph_color",
+      "label": "Couleur",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Espacement"
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "label": "Espacement entre les textes",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_padding_horizontal",
+      "label": "Padding texte (desktop)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "text_padding_horizontal_mobile",
+      "label": "Padding texte (mobile)",
+      "min": 15,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "range",
+      "id": "gap_desktop",
+      "label": "Espace image/texte (desktop)",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "gap_mobile",
+      "label": "Espace image/texte (mobile)",
+      "min": 20,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Largeur maximale",
+      "min": 1000,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "range",
+      "id": "section_padding_desktop",
+      "label": "Padding vertical (desktop)",
+      "min": 40,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "section_padding_mobile",
+      "label": "Padding vertical (mobile)",
+      "min": 30,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding_desktop",
+      "label": "Padding horizontal (desktop)",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "horizontal_padding_mobile",
+      "label": "Padding horizontal (mobile)",
+      "min": 15,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Couleur de fond",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image et texte"
+    }
+  ]
+}
 {% endschema %}
