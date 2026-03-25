@@ -1,6 +1,314 @@
+{% doc %}
+  @prompt
+    Créer une section avec une image à droite et du texte à gauche sur ordinateur.
+    
+    Le texte doit contenir :
+    - un titre
+    - un sous-titre
+    - un paragraphe
+    
+    Le texte doit être bien aligné, lisible et centré verticalement.
+    
+    IMPORTANT :
+    - Ajouter de l’espace autour du texte (padding à gauche et à droite d’au moins 20 à 30px)
+    - Le texte ne doit jamais être collé aux bords de l’écran
+    
+    Image :
+    - L’image doit être légèrement plus petite que le texte
+    - Coins légèrement arrondis
+    - Aspect propre et esthétique
+    
+    Responsive mobile :
+    - Sur téléphone, l’image doit être en haut et le texte en dessous
+    - Le texte doit rester bien espacé des bords (padding mobile aussi)
+    - Le contenu doit être centré et facile à lire
+    
+    Style :
+    - Design moderne, minimaliste et premium
+    - Adapté à une marque beauté
+    - Espacement équilibré entre les éléments,, le texte sur telephone doit être centrer a l'image, style d'écriture du titre en playfair display
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-text-section-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    padding: 60px 0;
+  }
+
+  .ai-image-text-container-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .ai-image-text-content-{{ ai_gen_id }} {
+    flex: 1.2;
+    padding: 0 20px;
+  }
+
+  .ai-image-text-title-{{ ai_gen_id }} {
+    font-family: 'Playfair Display', serif;
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 16px 0;
+    line-height: 1.2;
+    font-weight: 400;
+  }
+
+  .ai-image-text-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 20px 0;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  .ai-image-text-paragraph-{{ ai_gen_id }} {
+    font-size: {{ block.settings.paragraph_size }}px;
+    color: {{ block.settings.paragraph_color }};
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+    flex: 1;
+    position: relative;
+  }
+
+  .ai-image-text-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .ai-image-text-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: #f5f5f5;
+  }
+
+  .ai-image-text-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #999;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-image-text-container-{{ ai_gen_id }} {
+      flex-direction: column-reverse;
+      gap: 40px;
+      padding: 0 20px;
+    }
+
+    .ai-image-text-content-{{ ai_gen_id }} {
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .ai-image-text-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.8 }}px;
+    }
+
+    .ai-image-text-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-image-text-paragraph-{{ ai_gen_id }} {
+      font-size: {{ block.settings.paragraph_size | times: 0.95 }}px;
+    }
+
+    .ai-image-text-image-wrapper-{{ ai_gen_id }} {
+      width: 100%;
+    }
+  }
+{% endstyle %}
+
+<image-text-section-{{ ai_gen_id }}
+  class="ai-image-text-section-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-image-text-container-{{ ai_gen_id }}">
+    <div class="ai-image-text-content-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-image-text-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+
+      {% if block.settings.subtitle != blank %}
+        <h3 class="ai-image-text-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</h3>
+      {% endif %}
+
+      {% if block.settings.paragraph != blank %}
+        <div class="ai-image-text-paragraph-{{ ai_gen_id }}">{{ block.settings.paragraph }}</div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-text-image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1000 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-image-text-image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-image-text-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-image-text-empty-state-{{ ai_gen_id }}">
+            Ajoutez une image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</image-text-section-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class ImageTextSection{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+
+    customElements.define('image-text-section-{{ ai_gen_id }}', ImageTextSection{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Image et texte",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Contenu"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Titre",
+      "default": "Découvrez notre collection"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Sous-titre",
+      "default": "Élégance et raffinement"
+    },
+    {
+      "type": "richtext",
+      "id": "paragraph",
+      "label": "Paragraphe",
+      "default": "<p>Plongez dans un univers de beauté et de bien-être avec nos produits soigneusement sélectionnés pour sublimer votre quotidien.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "label": "Arrondi des coins",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Style du titre"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Taille du titre",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Style du sous-titre"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Taille du sous-titre",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Couleur du sous-titre",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Style du paragraphe"
+    },
+    {
+      "type": "range",
+      "id": "paragraph_size",
+      "label": "Taille du paragraphe",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "paragraph_color",
+      "label": "Couleur du paragraphe",
+      "default": "#666666"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image et texte"
+    }
+  ]
+}
 {% endschema %}
