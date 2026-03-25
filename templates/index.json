@@ -518,9 +518,10 @@
         "ai_gen_block_8d73235_ffR3DF": {
           "type": "ai_gen_block_8d73235",
           "settings": {
-            "title": "<p>Découvrez notre collection</p>",
-            "subtitle": "<p>Des produits de beauté premium</p>",
-            "paragraph": "<p>Explorez notre sélection soigneusement choisie de produits de beauté haut de gamme, conçus pour sublimer votre routine quotidienne avec élégance et efficacité.</p>",
+            "title": "<p>Même au travail, rester libre de vos mouvements</p>",
+            "subtitle": "",
+            "paragraph": "<p>Discrète et facile à porter, notre ceinture vous accompagne partout : au travail, en sortie ou à la maison. Profitez d’un soulagement rapide sans interrompre votre journée, en toute simplicité.</p>",
+            "image": "shopify://shop_images/image-11.webp",
             "image_border_radius": 16,
             "max_width": 1400,
             "gap": 60,
@@ -532,7 +533,7 @@
             "text_padding": 20,
             "text_spacing": 16,
             "mobile_text_alignment": "center",
-            "title_size_desktop": 48,
+            "title_size_desktop": 32,
             "title_size_mobile": 32,
             "subtitle_size_desktop": 24,
             "subtitle_size_mobile": 18,
@@ -550,6 +551,36 @@
         "ai_gen_block_8d73235_ffR3DF"
       ],
       "settings": {}
+    },
+    "multiple_images_with_text_eVH7fx": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "item_x9kFk3": {
+          "type": "item",
+          "settings": {
+            "image_rotation_degrees": -2,
+            "subheading": "",
+            "title": "Heading 1",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_x9kFk3"
+      ],
+      "name": "Multiple images with text",
+      "settings": {
+        "full_width": true,
+        "images_layout": "stacked",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
     }
   },
   "order": [
@@ -566,6 +597,7 @@
     "faq",
     "177384083016474427",
     "blog_posts_e8VnV9",
-    "17744320597e7a0cdc"
+    "17744320597e7a0cdc",
+    "multiple_images_with_text_eVH7fx"
   ]
 }
