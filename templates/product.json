@@ -261,6 +261,7 @@
       "blocks": {
         "ai_gen_block_9bffa4b_QKVrVF": {
           "type": "ai_gen_block_9bffa4b",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Design_sans_titre_50.webp",
             "image_width": 40,
@@ -290,6 +291,32 @@
       },
       "block_order": [
         "ai_gen_block_9bffa4b_QKVrVF"
+      ],
+      "settings": {}
+    },
+    "17744359592947276d": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ae63828_jykM9f": {
+          "type": "ai_gen_block_ae63828",
+          "settings": {
+            "title": "Retrouver du confort pendant vos règles",
+            "subtitle": "",
+            "paragraph": "<p>Les règles douloureuses peuvent vite rendre le quotidien difficile : crampes, tensions et inconfort.<br/></p><p>ChaleurDouce diffuse une chaleur douce et ciblée pour détendre les muscles et apaiser rapidement les douleurs, en vous procurant une sensation de bien-être en quelques minutes.</p>",
+            "image": "shopify://shop_images/image-12.webp",
+            "image_border_radius": 16,
+            "title_size": 38,
+            "title_color": "#1a1a1a",
+            "subtitle_size": 20,
+            "subtitle_color": "#666666",
+            "paragraph_size": 16,
+            "paragraph_color": "#666666"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ae63828_jykM9f"
       ],
       "settings": {}
     },
@@ -779,32 +806,6 @@
         "ai_gen_block_cd562d8_3TfMG8"
       ],
       "settings": {}
-    },
-    "17744359592947276d": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_ae63828_jykM9f": {
-          "type": "ai_gen_block_ae63828",
-          "settings": {
-            "title": "Retrouver du confort pendant vos règles",
-            "subtitle": "",
-            "paragraph": "<p>Les règles douloureuses peuvent vite rendre le quotidien difficile : crampes, tensions et inconfort.<br/></p><p>ChaleurDouce diffuse une chaleur douce et ciblée pour détendre les muscles et apaiser rapidement les douleurs, en vous procurant une sensation de bien-être en quelques minutes.</p>",
-            "image": "shopify://shop_images/image-12.webp",
-            "image_border_radius": 16,
-            "title_size": 38,
-            "title_color": "#1a1a1a",
-            "subtitle_size": 20,
-            "subtitle_color": "#666666",
-            "paragraph_size": 16,
-            "paragraph_color": "#666666"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_ae63828_jykM9f"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -812,6 +813,7 @@
     "17739482231f2ca2ad",
     "1774435737e9dc0762",
     "1773931052e74d2078",
+    "17744359592947276d",
     "177394009595a8bf00",
     "17738456821a0b5b6d",
     "rich_text_cmFfNx",
@@ -824,7 +826,6 @@
     "before_after_image_fmPB8E",
     "177393285333f388f0",
     "17739407062e0481a8",
-    "1774433988843715be",
-    "17744359592947276d"
+    "1774433988843715be"
   ]
 }
