@@ -511,6 +511,45 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "17744320597e7a0cdc": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8d73235_ffR3DF": {
+          "type": "ai_gen_block_8d73235",
+          "settings": {
+            "title": "<p>Découvrez notre collection</p>",
+            "subtitle": "<p>Des produits de beauté premium</p>",
+            "paragraph": "<p>Explorez notre sélection soigneusement choisie de produits de beauté haut de gamme, conçus pour sublimer votre routine quotidienne avec élégance et efficacité.</p>",
+            "image_border_radius": 16,
+            "max_width": 1400,
+            "gap": 60,
+            "gap_mobile": 30,
+            "section_padding_desktop": 80,
+            "section_padding_mobile": 40,
+            "horizontal_padding_desktop": 40,
+            "horizontal_padding_mobile": 25,
+            "text_padding": 20,
+            "text_spacing": 16,
+            "mobile_text_alignment": "center",
+            "title_size_desktop": 48,
+            "title_size_mobile": 32,
+            "subtitle_size_desktop": 24,
+            "subtitle_size_mobile": 18,
+            "paragraph_size_desktop": 16,
+            "paragraph_size_mobile": 15,
+            "background_color": "#ffffff",
+            "title_color": "#1a1a1a",
+            "subtitle_color": "#666666",
+            "paragraph_color": "#4a4a4a"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8d73235_ffR3DF"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -526,6 +565,7 @@
     "impact_text_DFLAjG",
     "faq",
     "177384083016474427",
-    "blog_posts_e8VnV9"
+    "blog_posts_e8VnV9",
+    "17744320597e7a0cdc"
   ]
 }
