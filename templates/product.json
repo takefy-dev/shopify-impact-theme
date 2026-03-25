@@ -751,6 +751,49 @@
         "ai_gen_block_cd562d8_3TfMG8"
       ],
       "settings": {}
+    },
+    "17744352480ede9ca7": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_4014fb3_JRmd9N": {
+          "type": "ai_gen_block_4014fb3",
+          "settings": {
+            "image": "shopify://shop_images/image-3.webp",
+            "image_width": 40,
+            "image_border_radius": 16,
+            "title": "<p>Ne laisser plus vos règles gâcher vos journées</p>",
+            "subtitle": "",
+            "paragraph": "<p>Les douleurs de règles ne devraient pas vous empêcher de vivre normalement. Travailler, sortir ou simplement profiter de votre journée devrait rester simple. </p><p>Avec Chaleur Douce, retrouvez rapidement confort et bien-être, où que vous soyez.</p>",
+            "title_font": "playfair_display_n4",
+            "title_size": 36,
+            "title_size_mobile": 28,
+            "title_color": "#1a1a1a",
+            "subtitle_size": 20,
+            "subtitle_size_mobile": 18,
+            "subtitle_weight": "500",
+            "subtitle_color": "#666666",
+            "paragraph_size": 16,
+            "paragraph_size_mobile": 15,
+            "paragraph_color": "#666666",
+            "text_spacing": 16,
+            "text_padding_horizontal": 40,
+            "text_padding_horizontal_mobile": 25,
+            "gap_desktop": 60,
+            "gap_mobile": 30,
+            "max_width": 1200,
+            "section_padding_desktop": 80,
+            "section_padding_mobile": 50,
+            "horizontal_padding_desktop": 40,
+            "horizontal_padding_mobile": 20,
+            "background_color": "#ffffff"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_4014fb3_JRmd9N"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -769,6 +812,7 @@
     "before_after_image_fmPB8E",
     "177393285333f388f0",
     "17739407062e0481a8",
-    "1774433988843715be"
+    "1774433988843715be",
+    "17744352480ede9ca7"
   ]
 }
