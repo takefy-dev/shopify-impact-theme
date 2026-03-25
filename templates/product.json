@@ -700,6 +700,7 @@
       "blocks": {
         "ai_gen_block_cd562d8_3TfMG8": {
           "type": "ai_gen_block_cd562d8",
+          "disabled": true,
           "settings": {
             "title": "ELLES ONT ADOPTÉ CHALEUR DOUCE",
             "title_size": 30,
